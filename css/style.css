@@ -1,0 +1,273 @@
+.nav-link {
+    color: #373F41;
+    font-weight: 600;
+}
+
+.active {
+    color: #38508F;
+    font-weight: 800;
+}
+
+.bg-slider {
+    background-image: url("../assets/img/background-slider.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 600px;
+}
+
+.img-tiyokfood {
+    width: 80%;
+    margin-top: 4.5em;
+}
+
+.title {
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #373F41;
+}
+
+.desc-right {
+    font-size: 18px;
+}
+
+.hero-right {
+    margin: 8em 0;
+}
+
+.btn-beli {
+    background-color: #E4BC4A;
+    width: 255px;
+    height: 48px;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 12px;
+    border-color: #E4BC4A;
+    font-weight: bold;
+}
+
+.gap-100 {
+    margin: 6em auto;
+}
+
+.video-title {
+    text-transform: uppercase;
+    color: #373F41;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+}
+
+.bg-bumbu {
+    background-image: url("../assets/img/background-bumbu.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 600px;
+}
+
+.judul-bumbu {
+    margin-top: 6em;
+    font-weight: bold;
+}
+
+.btn-bumbu {
+    text-transform: uppercase;
+    width: 255px;
+    height: 48px;
+    color: white;
+    font-weight: bold;
+    background-color: #38508F;
+    border: none;
+    border-radius: 12px;
+}
+
+.img-bumbu {
+    width: 540px;
+    height: auto;
+    margin-top: 8.3em;
+}
+
+.title-rekomendasi {
+    color: #373F41;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    font-size: 24px;
+}
+
+.img-rekomen {
+    width: 140px;
+    height: auto;
+}
+
+.rekomendasi {
+    margin: 4em 0;
+}
+
+.rekomendasi img {
+    padding: 20px 0;
+    transition: ease-in-out 0.6s;
+    cursor: pointer;
+}
+
+.rekomendasi img:hover {
+    transform: scale(1.1);
+}
+
+.title-produk {
+    margin: 10px;
+    color: #373F41;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.harga {
+    margin: 8px;
+    color: darkgray;
+    font-weight: 400;
+}
+
+
+.btn-rekomendasi-m {
+    margin: 1.8em;
+}
+
+.btn-rekomendasi {
+    width: 280px;
+    height: 42px;
+    background-color: #38508F;
+    border-radius: 20px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.marketplace-info {
+    padding: 10px 0;
+}
+
+.marketplace-title {
+    color: #373F41;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.p-marketplace {
+    padding: 2em;
+}
+
+.footer-tiyok {
+    padding: 20px;
+    background-color: #F2C94C;
+    width: 100%;
+    min-height: 420px;
+}
+
+.list-footer {
+    background-color: #F2C94C;
+    border: none;
+}
+
+.link-footer {
+    color: #373F41;
+    font-size: 14px;
+}
+
+.title-cv-footer {
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.logo-cv {
+    width: 257px;
+    height: auto;
+}
+
+.produk {
+    margin: 3.6em 0;
+}
+
+.judul-produk {
+    color: #38508F;
+    font-weight: 800;
+    font-size: 36px;
+}
+
+.p-produk {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.filter-produk {
+    margin: 2em 0;
+}
+
+.tentang {
+    margin: 3.6em 0;
+}
+
+.jud-tentang {
+    color: #38508F;
+    font-weight: 800;
+    font-size: 36px;
+}
+
+.img-tentang {
+    margin: 1.4em 0;
+}
+
+.p-tentang {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.img-gallery {
+    margin: 1.8em 0;
+}
+
+.kontak {
+    margin: 3.6em 0;
+}
+
+.alamat {
+    font-weight: 300;
+}
+
+.alamat-kontak {
+    font-weight: 700;
+    margin: 1.2em 0;
+    margin-bottom: 0.5em;
+}
+
+.katalog {
+    margin: 2em 20px;
+}
+
+.img-katalog {
+    width: 180px;
+}
+
+.katalog img {
+    transition: ease-in-out 0.6s;
+    cursor: pointer;
+}
+
+.katalog img:hover {
+    transform: scale(1.1);
+}
+
+.produk-katalog {
+    font-size: 16px;
+    font-weight: 400;
+    color: #373F41;
+}
+
+.harga.katalog {
+    font-size: 18px;
+    font-weight: 800;
+    color: #373F41;
+}
