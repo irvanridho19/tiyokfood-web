@@ -121,7 +121,7 @@
         });
     </script>
     <script>        
-        fetch('../data.json').then(function (response){      
+        fetch('./data.json').then(function (response){      
             return response.json();        
             }).then(function (data){            
                 $(".katalog-desc").append('<h5>' + data[0].Name + '</h5>');        
