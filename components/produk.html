@@ -85,25 +85,11 @@
     </section>
     <!-- End of Section -->
 
-<section class="katalog-semua">
-    <div class="container">
-        <div class="row text-center">
-            <div class="col-sm-4 col-md-4">
-                <a href="#" class="link-produk">
-                </a>
-                <div class="deskripsi-kat">
+    <section class="katalog-section">
+        <div id="katalog">
 
-                </div>
-            </div>
-            <div class="col-sm-4 col-md-4">
-                1 of 2
-            </div>
-            <div class="col-sm-4 col-md-4">
-                1 of 3
-            </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -122,15 +108,38 @@
             easing: 'ease'
         });
     </script>
-    <script>        
-        fetch('../data.json').then(function (response){      
-            return response.json();        
-            }).then(function (data){    
-                $(".link-produk").append("<img class='img-fluid img-rekomen' src='" + data[0].Thumbnail_URL + "'>");
-                $(".deskripsi-kat").append('<h5 class="text-kat">' + data[0].Name + '</h5><h5 class="harga-kat">' + 'Rp ' +data[0].Harga + '</h5>');     
-                }).then(function (err){            
-                    console.log('error: ' + err);        
-                });
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script>
+        fetch('../data.json')
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (data) {
+                // for (let index = 0; index < data.length; index++) {
+                $("#katalog").append(
+                    '<div class="row text-center">' +
+                    '<div class="col-sm-4">' +
+                    "<img class='img-fluid img-kat' src='" + data[0].thumbnailUrl + "'>" +
+                    '<h5 class="text-cat">' + data[0].nama + '</h5>' +
+                    '<h5 class="harga-kat">' + 'Rp' + ' ' + data[0].harga + '</h5>' +
+                    '</div>' +
+                    '<div class="col-sm-4">' +
+                    "<img class='img-fluid img-kat' src='" + data[1].thumbnailUrl + "'>" +
+                    '<h5 class="text-cat">' + data[1].nama + '</h5>' +
+                    '<h5 class="harga-kat">' + 'Rp' + ' ' + data[1].harga + '</h5>' +
+                    '</div>' +
+                    '<div class="col-sm-4">' +
+                    "<img class='img-fluid img-kat' src='" + data[2].thumbnailUrl + "'>" +
+                    '<h5 class="text-cat">' + data[2].nama + '</h5>' +
+                    '<h5 class="harga-kat">' + 'Rp' + ' ' + data[2].harga + '</h5>' +
+                    '</div>' +
+                    '</div'
+                );
+            })
+            .catch(function (err) {
+                console.log('error: ' + err);
+            });
     </script>
     <script src="../script.js"></script>
 </body>

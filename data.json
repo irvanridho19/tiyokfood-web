@@ -1,34 +1,51 @@
 [
     {
-        "ID": 1,
-        "Name": "Kacang Atom",
-        "jumlah_stok": 10,
-        "Berat": "250gr",
-        "Harga": 15000,
-        "Thumbnail_URL": "../assets/img/atom-120.png"
+      "id": 1,
+      "nama": "Kacang Atom - 120gr",
+      "harga": 7000,
+      "berat": 120,
+      "jumlah": 10,
+      "thumbnailUrl": "https://via.placeholder.com/150/92c952"
     },
     {
-        "ID": 2,
-        "Name": "Kacang Atom",
-        "jumlah_stok": 10,
-        "Berat": "120gr",
-        "Harga": 7000,
-        "Thumbnail_URL": "../assets/img/atom-120.png"
-    },
-    {
-        "ID": 3,
-        "Name": "Kacang Atom",
-        "jumlah_stok": 10,
-        "Berat": "40gr",
-        "Harga": 2500,
-        "Thumbnail_URL": "../assets/img/atom-120.png"
-    },
-    {
-        "ID": 4,
-        "Name": "Kacang Atom",
-        "jumlah_stok": 10,
-        "Berat": "30gr",
-        "Harga": 2500,
-        "Thumbnail_URL": "../assets/img/atom-120.png"
-    }
+        "id": 2,
+        "nama": "Kacang Kriuk - 120gr",
+        "harga": 7000,
+        "berat": 120,
+        "jumlah": 10,
+        "thumbnailUrl": "https://via.placeholder.com/150/92c952"
+      },
+      {
+        "id": 3,
+        "nama": "Kacang Bawang - 120gr",
+        "harga": 7000,
+        "berat": 120,
+        "jumlah": 10,
+        "thumbnailUrl": "https://via.placeholder.com/150/92c952"
+      },
+      {
+        "id": 4,
+        "nama": "Kacang Kulit - 120gr",
+        "harga": 7000,
+        "berat": 120,
+        "jumlah": 10,
+        "thumbnailUrl": "https://via.placeholder.com/150/92c952"
+      },
+      {
+        "id": 5,
+        "nama": "Kacang Atom - 120gr",
+        "harga": 7000,
+        "berat": 120,
+        "jumlah": 10,
+        "thumbnailUrl": "https://via.placeholder.com/150/92c952"
+      },
+      {
+        "id": 6,
+        "nama": "Kacang Atom - 120gr",
+        "harga": 7000,
+        "berat": 120,
+        "jumlah": 10,
+        "thumbnailUrl": "https://via.placeholder.com/150/92c952"
+      }
 ]
+    
