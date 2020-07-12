@@ -4,16 +4,16 @@
         "Name": "Kacang Atom",
         "jumlah_stok": 10,
         "Berat": "250gr",
-        "Harga": 7000,
-        "Thumbnail_URL": "https://irvanridho19.github.io/tiyokfood/assets/img/atom-120.png"
+        "Harga": 15000,
+        "Thumbnail_URL": "../assets/img/atom-120.png"
     },
     {
         "ID": 2,
-        "Name": "Kacang Kriuk",
+        "Name": "Kacang Atom",
         "jumlah_stok": 10,
         "Berat": "120gr",
         "Harga": 7000,
-        "Thumbnail_URL": "https://irvanridho19.github.io/tiyokfood/assets/img/kacang-kriuk.png"
+        "Thumbnail_URL": "../assets/img/atom-120.png"
     },
     {
         "ID": 3,
@@ -21,7 +21,7 @@
         "jumlah_stok": 10,
         "Berat": "40gr",
         "Harga": 2500,
-        "Thumbnail_URL": "https://irvanridho19.github.io/tiyokfood/assets/img/atom-120.png"
+        "Thumbnail_URL": "../assets/img/atom-120.png"
     },
     {
         "ID": 4,
@@ -29,6 +29,6 @@
         "jumlah_stok": 10,
         "Berat": "30gr",
         "Harga": 2500,
-        "Thumbnail_URL": "https://irvanridho19.github.io/tiyokfood/assets/img/atom-120.png"
+        "Thumbnail_URL": "../assets/img/atom-120.png"
     }
 ]

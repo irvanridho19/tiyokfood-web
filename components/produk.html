@@ -88,10 +88,9 @@
 <section class="katalog-semua">
     <div class="container">
         <div class="row text-center">
-            <div class="katalog-desc">
             <div class="col-sm-4 col-md-4">
-                <img src="../assets/img/atom-120.png" alt="Kacang Atom" class="img-fluid img-kat">
-            </div>
+                <a href="#" class="link-produk">
+                </a>
             </div>
             <div class="col-sm-4 col-md-4">
                 1 of 2
@@ -123,8 +122,8 @@
     <script>        
         fetch('./data.json').then(function (response){      
             return response.json();        
-            }).then(function (data){            
-                $(".katalog-desc").append('<h5>' + data[0].Name + '</h5>');        
+            }).then(function (data){    
+                $(".link-produk").append("<img class='img-fluid' src='" + data[0].Thumbnail_URL + "'>");      
                 }).then(function (err){            
                     console.log('error: ' + err);        
                 });
