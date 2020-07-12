@@ -1,8 +1,34 @@
-[    
-    {        
-        "product ID": 7631,        
-        "Name": "Kacang Atom",        
-        "Harga": 12.500,        
-        "Thumbnail URL": "/assets/images/atom-120.png"    
+[
+    {
+        "ID": 1,
+        "Name": "Kacang Atom",
+        "jumlah_stok": 10,
+        "Berat": "250gr",
+        "Harga": 7000,
+        "Thumbnail_URL": "https://irvanridho19.github.io/tiyokfood/assets/img/atom-120.png"
+    },
+    {
+        "ID": 2,
+        "Name": "Kacang Kriuk",
+        "jumlah_stok": 10,
+        "Berat": "120gr",
+        "Harga": 7000,
+        "Thumbnail_URL": "https://irvanridho19.github.io/tiyokfood/assets/img/kacang-kriuk.png"
+    },
+    {
+        "ID": 3,
+        "Name": "Kacang Atom",
+        "jumlah_stok": 10,
+        "Berat": "40gr",
+        "Harga": 2500,
+        "Thumbnail_URL": "https://irvanridho19.github.io/tiyokfood/assets/img/atom-120.png"
+    },
+    {
+        "ID": 4,
+        "Name": "Kacang Atom",
+        "jumlah_stok": 10,
+        "Berat": "30gr",
+        "Harga": 2500,
+        "Thumbnail_URL": "https://irvanridho19.github.io/tiyokfood/assets/img/atom-120.png"
     }
 ]

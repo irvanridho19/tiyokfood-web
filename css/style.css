@@ -323,3 +323,25 @@
     font-weight: 700;
     margin: 0.2em 0;
 }
+
+.katalog-section {
+    margin: 1em 0;
+}
+
+.img-kat {
+    width: 160px;
+    height: auto;
+}
+
+.text-kat {
+    margin: 0.6em 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #373F41;
+}
+
+.harga-kat {
+    font-size: 18px;
+    font-weight: 800;
+    color: #373F41;
+}
