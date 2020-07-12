@@ -123,7 +123,7 @@
         fetch('../data.json').then(function (response){      
             return response.json();        
             }).then(function (data){    
-                $(".link-produk").append("<img class='img-fluid' src='" + data[0].Thumbnail_URL + "'>");      
+                $(".link-produk").append("<img class='img-fluid img-rekomen' src='" + data[0].Thumbnail_URL + "'>");      
                 }).then(function (err){            
                     console.log('error: ' + err);        
                 });
