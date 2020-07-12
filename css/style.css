@@ -267,7 +267,59 @@
 }
 
 .harga.katalog {
+    font-size: 16px;
+    font-weight: 800;
+    color: #E4BC4A;
+}
+
+.nama-p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #373F41;
+}
+
+.harga-p {
     font-size: 18px;
     font-weight: 800;
+    color: #E4BC4A;
+}
+
+.tombol-beli {
+    width: 8em;
+    font-weight: 800;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.keranjang {
+    margin: 3.6em 0;
+}
+
+.judul-keranjang {
+    color: #38508F;
+    font-weight: 800;
+    font-size: 36px;
+}
+
+.table-keranjang-header {
+    font-size: 16px;
+    font-weight: 700;
     color: #373F41;
+}
+
+.img-keranjang {
+    width: 120px;
+    height: auto;
+}
+
+.produk-dibeli {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 1.2em 0;
+}
+
+.harga-dibeli {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0.2em 0;
 }
