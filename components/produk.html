@@ -91,6 +91,9 @@
             <div class="col-sm-4 col-md-4">
                 <a href="#" class="link-produk">
                 </a>
+                <div class="deskripsi-kat">
+
+                </div>
             </div>
             <div class="col-sm-4 col-md-4">
                 1 of 2
@@ -123,7 +126,8 @@
         fetch('../data.json').then(function (response){      
             return response.json();        
             }).then(function (data){    
-                $(".link-produk").append("<img class='img-fluid img-rekomen' src='" + data[0].Thumbnail_URL + "'>");      
+                $(".link-produk").append("<img class='img-fluid img-rekomen' src='" + data[0].Thumbnail_URL + "'>");
+                $(".deskripsi-kat").append('<h5 class="text-kat">' + data[0].Name + '</h5><h5 class="harga-kat">' + 'Rp ' +data[0].Harga + '</h5>');     
                 }).then(function (err){            
                     console.log('error: ' + err);        
                 });
