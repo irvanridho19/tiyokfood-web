@@ -4,11 +4,7 @@
         "Name": "Kacang Atom",
         "jumlah_stok": 10,
         "Berat": "250gr",
-<<<<<<< HEAD
         "Harga": 15000,
-=======
-        "Harga": 7000,
->>>>>>> 9f48b67cd7d521ab9f5b26f1de205d9719787a18
         "Thumbnail_URL": "../assets/img/atom-120.png"
     },
     {
@@ -17,11 +13,7 @@
         "jumlah_stok": 10,
         "Berat": "120gr",
         "Harga": 7000,
-<<<<<<< HEAD
         "Thumbnail_URL": "../assets/img/atom-120.png"
-=======
-        "Thumbnail_URL": "../assets/img/kacang-kriuk.png"
->>>>>>> 9f48b67cd7d521ab9f5b26f1de205d9719787a18
     },
     {
         "ID": 3,
