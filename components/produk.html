@@ -56,7 +56,7 @@
                     </ul>
                 </div>
 
-                <!-- <a href="keranjang.html"> -->
+                <!-- Cart -->
                 <button type="button" class="btn btn-warning justify-content-center" data-toggle="modal"
                     data-target="#cart">
                     <h5 class="cart-title">keranjang(<span class="total-count"></span>)</h5>
@@ -79,7 +79,7 @@
                     </svg>
                 </button>
 
-                <!-- Modal -->
+                <!-- Cart Modal -->
                 <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
                     <div class="modal-dialog modal-lg" role="document">
@@ -104,8 +104,7 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- </a> -->
+                
             </nav>
         </div>
     </header>
@@ -165,7 +164,8 @@
                     '<div class="col-sm-4">' +
                     "<img class='img-fluid img-kat' src='" + data[0].thumbnailUrl + "'>" +
                     '<h5 class="text-kat">' + data[0].nama + '</h5>' +
-                    '<h5 class="harga-kat">' + 'Rp' + ' ' + '<span class="hargaItem">' + data[0].harga + '</span>' + '</h5>' +
+                    '<h5 class="harga-kat">' + 'Rp' + ' ' + '<span class="hargaItem">' + data[0].harga +
+                    '</span>' + '</h5>' +
                     '<button type="button" class="add-cart btn btn-primary">' +
                     '<h5 class="beli">' + 'tambah ke keranjang' + '</h5>' +
                     '</button>' +
@@ -173,7 +173,8 @@
                     '<div class="col-sm-4">' +
                     "<img class='img-fluid img-kat' src='" + data[1].thumbnailUrl + "'>" +
                     '<h5 class="text-kat">' + data[1].nama + '</h5>' +
-                    '<h5 class="harga-kat">' + 'Rp' + ' ' + '<span class="hargaItem">' + data[1].harga + '</span>' + '</h5>' +
+                    '<h5 class="harga-kat">' + 'Rp' + ' ' + '<span class="hargaItem">' + data[1].harga +
+                    '</span>' + '</h5>' +
                     '<button type="button" class="add-cart btn btn-primary">' +
                     '<h5 class="beli">' + 'tambah ke keranjang' + '</h5>' +
                     '</button>' +
@@ -181,7 +182,8 @@
                     '<div class="col-sm-4">' +
                     "<img class='img-fluid img-kat' src='" + data[2].thumbnailUrl + "'>" +
                     '<h5 class="text-kat">' + data[2].nama + '</h5>' +
-                    '<h5 class="harga-kat">' + 'Rp' + ' ' + '<span class="hargaItem">' + data[0].harga + '</span>' + '</h5>' +
+                    '<h5 class="harga-kat">' + 'Rp' + ' ' + '<span class="hargaItem">' + data[0].harga +
+                    '</span>' + '</h5>' +
                     '<button type="button" class="add-cart btn btn-primary">' +
                     '<h5 class="beli">' + 'tambah ke keranjang' + '</h5>' +
                     '</button>' +
@@ -194,13 +196,14 @@
                 $("#katalog").on("click", "button", function () {
                     itemCount++;
                     $('.total-count').text(itemCount);
+                    var rep = $(this).siblings().find('.hargaItem').html();
+                    var price = Number(rep.replace(/[^0-9\.-]+/g, ""));
+                    console.log(rep);
+                    priceTotal += price;
+                    $('.total-cart').text(priceTotal);
                 });
-                // Calculate Total Price
-                var price = parseInt($(this).siblings().find('.hargaItem').text());
-                console.log(price);
-                priceTotal += price;
-
-                $('.total-cart').text(priceTotal);
+                
+                // open Cart
             })
 
             .catch(function (err) {
