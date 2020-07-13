@@ -329,7 +329,7 @@
 }
 
 .img-kat {
-    width: 160px;
+    width: 170px;
     height: auto;
 }
 
@@ -344,4 +344,23 @@
     font-size: 18px;
     font-weight: 800;
     color: #373F41;
+}
+
+.beli {
+    display: inline;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.add-cart {
+    margin: 1em 0;
+}
+
+.cart-title {
+    font-size: 12px;
+    display: inline;
+    color: #373F41;
+    font-weight: 500;
+    text-transform: capitalize;
 }
