@@ -66,6 +66,7 @@
                             d="M1 4h14v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4zm7-2.5A2.5 2.5 0 0 0 5.5 4h-1a3.5 3.5 0 1 1 7 0h-1A2.5 2.5 0 0 0 8 1.5z" />
                     </svg>
                 </button>
+                <span id="itemCount"></span>
                 <button class="clear-cart btn">
                     <svg width="0.8em" height="0.8em" viewBox="0 0 16 16" class="bi bi-x-circle" fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg">
@@ -93,10 +94,11 @@
                                 <table class="show-cart table">
 
                                 </table>
-                                <div>Total price: Rp<span class="total-cart"></span></div>
+                                <div>Total harga: Rp<span class="total-cart"></span></div>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Lanjut Belanja</button>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Lanjut
+                                    Belanja</button>
                                 <button type="button" class="btn btn-primary">Pesan Sekarang</button>
                             </div>
                         </div>
@@ -163,36 +165,50 @@
                     '<div class="col-sm-4">' +
                     "<img class='img-fluid img-kat' src='" + data[0].thumbnailUrl + "'>" +
                     '<h5 class="text-kat">' + data[0].nama + '</h5>' +
-                    '<h5 class="harga-kat">' + 'Rp' + ' ' + data[0].harga + '</h5>' +
-                    '<button type="button" class="btn btn-primary add-cart">' +
+                    '<h5 class="harga-kat">' + 'Rp' + ' ' + '<span class="hargaItem">' + data[0].harga + '</span>' + '</h5>' +
+                    '<button type="button" class="add-cart btn btn-primary">' +
                     '<h5 class="beli">' + 'tambah ke keranjang' + '</h5>' +
                     '</button>' +
                     '</div>' +
                     '<div class="col-sm-4">' +
                     "<img class='img-fluid img-kat' src='" + data[1].thumbnailUrl + "'>" +
                     '<h5 class="text-kat">' + data[1].nama + '</h5>' +
-                    '<h5 class="harga-kat">' + 'Rp' + ' ' + data[1].harga + '</h5>' +
-                    '<button type="button" class="btn btn-primary add-cart">' +
+                    '<h5 class="harga-kat">' + 'Rp' + ' ' + '<span class="hargaItem">' + data[1].harga + '</span>' + '</h5>' +
+                    '<button type="button" class="add-cart btn btn-primary">' +
                     '<h5 class="beli">' + 'tambah ke keranjang' + '</h5>' +
                     '</button>' +
                     '</div>' +
                     '<div class="col-sm-4">' +
                     "<img class='img-fluid img-kat' src='" + data[2].thumbnailUrl + "'>" +
                     '<h5 class="text-kat">' + data[2].nama + '</h5>' +
-                    '<h5 class="harga-kat">' + 'Rp' + ' ' + data[2].harga + '</h5>' +
-                    '<button type="button" class="btn btn-primary add-cart">' +
+                    '<h5 class="harga-kat">' + 'Rp' + ' ' + '<span class="hargaItem">' + data[0].harga + '</span>' + '</h5>' +
+                    '<button type="button" class="add-cart btn btn-primary">' +
                     '<h5 class="beli">' + 'tambah ke keranjang' + '</h5>' +
                     '</button>' +
                     '</div>' +
                     '</div'
                 );
+                var itemCount = 0;
+                var priceTotal = 0;
+
+                $("#katalog").on("click", "button", function () {
+                    itemCount++;
+                    $('.total-count').text(itemCount);
+                });
+                // Calculate Total Price
+                var price = parseInt($(this).siblings().find('.hargaItem').text());
+                console.log(price);
+                priceTotal += price;
+
+                $('.total-cart').text(priceTotal);
             })
+
             .catch(function (err) {
                 console.log('error: ' + err);
             });
     </script>
     <script src="../script.js"></script>
-    <script src="../js/cart.js"></script>
+    <!-- <script src="../js/cart.js"></script> -->
 </body>
 
 </html>
