@@ -1,123 +1,139 @@
-[
+{
+  "items": [
     {
-      "id": 1,
-      "nama": "Kacang Atom - 120gr",
-      "harga": 7000,
-      "berat": 120,
-      "jumlah": 10,
-      "thumbnailUrl": "https://via.placeholder.com/150/92c952"
+      "sys": { "id": "1" },
+      "fields": {
+        "title": "kacang atom - 120gr",
+        "weight": "120",
+        "price": 7000,
+        "image": { "fields": { "file": { "url": "../assets/img/atom-120.png" } } }
+      }
     },
     {
-        "id": 2,
-        "nama": "Kacang Kriuk - 120gr",
-        "harga": 7000,
-        "berat": 120,
-        "jumlah": 10,
-        "thumbnailUrl": "https://via.placeholder.com/150/92c952"
-      },
-      {
-        "id": 3,
-        "nama": "Kacang Bawang - 120gr",
-        "harga": 7000,
-        "berat": 120,
-        "jumlah": 10,
-        "thumbnailUrl": "https://via.placeholder.com/150/92c952"
-      },
-      {
-        "id": 4,
-        "nama": "Kacang Kulit - 120gr",
-        "harga": 7000,
-        "berat": 120,
-        "jumlah": 10,
-        "thumbnailUrl": "https://via.placeholder.com/150/92c952"
-      },
-      {
-        "id": 5,
-        "nama": "Kacang Atom - 120gr",
-        "harga": 7000,
-        "berat": 120,
-        "jumlah": 10,
-        "thumbnailUrl": "https://via.placeholder.com/150/92c952"
-      },
-      {
-        "id": 6,
-        "nama": "Kacang Atom - 120gr",
-        "harga": 7000,
-        "berat": 120,
-        "jumlah": 10,
-        "thumbnailUrl": "https://via.placeholder.com/150/92c952"
-      },
-      {
-        "id": 7,
-        "nama": "Kacang Atom - 120gr",
-        "harga": 7000,
-        "berat": 120,
-        "jumlah": 10,
-        "thumbnailUrl": "https://via.placeholder.com/150/92c952"
-      },
-      {
-        "id": 8,
-        "nama": "Kacang Atom - 120gr",
-        "harga": 7000,
-        "berat": 120,
-        "jumlah": 10,
-        "thumbnailUrl": "https://via.placeholder.com/150/92c952"
-      },
-      {
-        "id": 9,
-        "nama": "Kacang Atom - 120gr",
-        "harga": 7000,
-        "berat": 120,
-        "jumlah": 10,
-        "thumbnailUrl": "https://via.placeholder.com/150/92c952"
-      },
-      {
-        "id": 10,
-        "nama": "Kacang Atom - 120gr",
-        "harga": 7000,
-        "berat": 120,
-        "jumlah": 10,
-        "thumbnailUrl": "https://via.placeholder.com/150/92c952"
-      },
-      {
-        "id": 11,
-        "nama": "Kacang Atom - 120gr",
-        "harga": 7000,
-        "berat": 120,
-        "jumlah": 10,
-        "thumbnailUrl": "https://via.placeholder.com/150/92c952"
-      },
-      {
-        "id": 12,
-        "nama": "Kacang Atom - 120gr",
-        "harga": 7000,
-        "berat": 120,
-        "jumlah": 10,
-        "thumbnailUrl": "https://via.placeholder.com/150/92c952"
-      },
-      {
-        "id": 13,
-        "nama": "Kacang Atom - 120gr",
-        "harga": 7000,
-        "berat": 120,
-        "jumlah": 10,
-        "thumbnailUrl": "https://via.placeholder.com/150/92c952"
-      },
-      {
-        "id": 14,
-        "nama": "Kacang Atom - 120gr",
-        "harga": 7000,
-        "berat": 120,
-        "jumlah": 10,
-        "thumbnailUrl": "https://via.placeholder.com/150/92c952"
-      },
-      {
-        "id": 15,
-        "nama": "Kacang Atom - 120gr",
-        "harga": 7000,
-        "berat": 120,
-        "jumlah": 10,
-        "thumbnailUrl": "https://via.placeholder.com/150/92c952"
+      "sys": { "id": "2" },
+      "fields": {
+        "title": "kacang bawang - 120gr",
+        "weight": "120",
+        "price": 7000,
+        "image": { "fields": { "file": { "url": "../assets/img/kacang-bawang.png" } } }
       }
-]
-    
+    },
+    {
+      "sys": { "id": "3" },
+      "fields": {
+        "title": "kacang kriuk - 120gr",
+        "weight": "120",
+        "price": 7000,
+        "image": { "fields": { "file": { "url": "../assets/img/kacang-kriuk.png" } } }
+      }
+    },
+    {
+      "sys": { "id": "4" },
+      "fields": {
+        "title": "kacang kulit - 120gr",
+        "weight": "120",
+        "price": 7000,
+        "image": { "fields": { "file": { "url": "../assets/img/kacang-kulit.png" } } }
+      }
+    },
+    {
+      "sys": { "id": "5" },
+      "fields": {
+        "title": "kacang telur - 120gr",
+        "weight": "120",
+        "price": 7000,
+        "image": { "fields": { "file": { "url": "../assets/img/kacang-telur.png" } } }
+      }
+    },
+    {
+      "sys": { "id": "6" },
+      "fields": {
+        "title": "kacang atom - 30gr",
+        "weight": "30",
+        "price": 2500,
+        "image": { "fields": { "file": { "url": "../assets/img/kacang-atom-kecil.png" } } }
+      }
+    },
+    {
+      "sys": { "id": "7" },
+      "fields": {
+        "title": "kacang bawang - 40gr",
+        "weight": "40",
+        "price": 2500,
+        "image": { "fields": { "file": { "url": "../assets/img/kacang-bawang-kecil.png" } } }
+      }
+    },
+    {
+      "sys": { "id": "8" },
+      "fields": {
+        "title": "kacang kriuk - 40gr",
+        "weight": "40",
+        "price": 2500,
+        "image": { "fields": { "file": { "url": "../assets/img/kacang-kriuk-kecil.png" } } }
+      }
+    },
+    {
+      "sys": { "id": "9" },
+      "fields": {
+        "title": "kacang kulit - 30gr",
+        "weight": "30",
+        "price": 2500,
+        "image": { "fields": { "file": { "url": "../assets/img/kacang-kulit-kecil.png" } } }
+      }
+    },
+    {
+      "sys": { "id": "10" },
+      "fields": {
+        "title": "kacang mete - 40gr",
+        "weight": "40",
+        "price": 2500,
+        "image": { "fields": { "file": { "url": "../assets/img/kacang-mede-kecil.png" } } }
+      }
+    },
+    {
+      "sys": { "id": "11" },
+      "fields": {
+        "title": "kacang telur - 40gr",
+        "weight": "40",
+        "price": 2500,
+        "image": { "fields": { "file": { "url": "../assets/img/kacang-telur-kecil.png" } } }
+      }
+    },
+    {
+      "sys": { "id": "12" },
+      "fields": {
+        "title": "mete wijen - 40gr",
+        "weight": "40",
+        "price": 2500,
+        "image": { "fields": { "file": { "url": "../assets/img/mete-wijen.png" } } }
+      }
+    },
+    {
+      "sys": { "id": "13" },
+      "fields": {
+        "title": "bumbu pecal - 250gr",
+        "weight": "250",
+        "price": 15000,
+        "image": { "fields": { "file": { "url": "../assets/img/bumbu-pecal.png" } } }
+      }
+    },
+    {
+      "sys": { "id": "14" },
+      "fields": {
+        "title": "bumbu gado-gado - 250gr",
+        "weight": "250",
+        "price": 15000,
+        "image": { "fields": { "file": { "url": "../assets/img/bumbu-gadogado.png" } } }
+      }
+    },
+    {
+      "sys": { "id": "15" },
+      "fields": {
+        "title": "bumbu siomay - 250gr",
+        "weight": "250",
+        "price": 15000,
+        "image": { "fields": { "file": { "url": "../assets/img/bumbu-siomay.png" } } }
+      }
+    }
+  ]
+}

@@ -40,7 +40,7 @@
                 </button>
 
                 <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                    <ul class="nav d-flex">
+                    <ul class="nav d-flex ml-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="../index.html">Beranda</a>
                         </li>
@@ -53,56 +53,62 @@
                         <li class="nav-item">
                             <a class="nav-link active" href="kontak.html">Kontak</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link cara-pesan" href="./order.html">Cara Pemesanan</a>
+                        </li>
                     </ul>
                 </div>
                   <!-- Cart -->
-                  <button type="button" class="btn btn-warning justify-content-center" data-toggle="modal"
-                  data-target="#cart">
-                  <h5 class="cart-title">keranjang(<span class="total-count"></span>)</h5>
-                  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bag-fill" fill="currentColor"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path
-                          d="M1 4h14v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4zm7-2.5A2.5 2.5 0 0 0 5.5 4h-1a3.5 3.5 0 1 1 7 0h-1A2.5 2.5 0 0 0 8 1.5z" />
-                  </svg>
-              </button>
-              <span id="itemCount"></span>
-              <button class="clear-cart btn">
-                  <svg width="0.8em" height="0.8em" viewBox="0 0 16 16" class="bi bi-x-circle" fill="currentColor"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd"
-                          d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                      <path fill-rule="evenodd"
-                          d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z" />
-                      <path fill-rule="evenodd"
-                          d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z" />
-                  </svg>
-              </button>
+                <!-- <button type="button" class="btn btn-warning cart-btn md ml-4 mr-auto" data-toggle="modal" data-target="#cart">
+                    <svg width="0.8em" height="0.8em" viewBox="0 0 16 16" class="bi bi-bag-fill" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M1 4h14v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4zm7-2.5A2.5 2.5 0 0 0 5.5 4h-1a3.5 3.5 0 1 1 7 0h-1A2.5 2.5 0 0 0 8 1.5z" />
+                    </svg>(<span class="total-count"></span>)
+                </button> -->
+           
+                <!-- <button class="clear-cart btn">
+                    <svg width="0.8em" height="0.8em" viewBox="0 0 16 16" class="bi bi-x-circle" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                        <path fill-rule="evenodd"
+                            d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z" />
+                        <path fill-rule="evenodd"
+                            d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z" />
+                    </svg>
+                </button> -->
 
-              <!-- Cart Modal -->
-              <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                  aria-hidden="true">
-                  <div class="modal-dialog modal-lg" role="document">
-                      <div class="modal-content">
-                          <div class="modal-header">
-                              <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                  <span aria-hidden="true">&times;</span>
-                              </button>
-                          </div>
-                          <div class="modal-body">
-                              <table class="show-cart table">
-
-                              </table>
-                              <div>Total harga: Rp<span class="total-cart"></span></div>
-                          </div>
-                          <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Lanjut
-                                  Belanja</button>
-                              <button type="button" class="btn btn-primary">Pesan Sekarang</button>
-                          </div>
-                      </div>
-                  </div>
-              </div>
+                <!-- Cart Modal -->
+                <!-- <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Keranjang Anda</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <table class="show-cart table">
+                                    <div class="cart-content">
+                                        
+                                    </div>
+                                </table>
+                                <div class="text-center lead title-total">Total harga: idr <span class="total-price"></span></div>
+                                <p class="ongkir text-center">*Harga belum termasuk ongkos kirim</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Lanjut
+                                    Belanja</button>
+                                <button type="button" class="btn btn-primary order-btn">Pesan Sekarang</button>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- end of cart modal -->
+                <!-- end of cart -->
             </nav>
         </div>
     </header>
@@ -264,6 +270,7 @@
             easing: 'ease'
         });
     </script>
+    <script src="../js/cart.js"></script>
 </body>
 
 </html>

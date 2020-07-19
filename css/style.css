@@ -18,7 +18,7 @@
 }
 
 .img-tiyokfood {
-    width: 80%;
+    width: 75%;
     margin-top: 4.5em;
 }
 
@@ -329,21 +329,23 @@
 }
 
 .img-kat {
-    width: 170px;
-    height: auto;
+    width: 150px;
+    max-height: 160px;
 }
 
 .text-kat {
     margin: 1em 0;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
     color: #373F41;
+    text-transform: capitalize;
 }
 
 .harga-kat {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 800;
     color: #373F41;
+    margin-bottom: 1.2em;
 }
 
 .beli {
@@ -354,7 +356,10 @@
 }
 
 .add-cart {
-    margin: 1em 0;
+    margin-bottom: 2rem;
+    font-size: 13px;
+    text-transform: capitalize;
+    border-radius: 10px;
 }
 
 .cart-title {
@@ -364,3 +369,116 @@
     font-weight: 500;
     text-transform: capitalize;
 }
+
+.cart-item {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr auto;
+    grid-column-gap: 1.5rem;
+    margin: 1.5rem 0;
+  }
+  .cart-item img {
+    width: 75px;
+    height: 75px;
+  }
+  .cart-item h4 {
+    font-size: 0.85rem;
+    text-transform: capitalize;
+    color: #373F41;
+    font-weight: 500;
+  }
+  .cart-item h5 {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: #373F41;
+    font-weight: 800;
+  }
+  .total-amount {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  .remove-item {
+    color: grey;
+    cursor: pointer;
+  }
+  .bi-caret-up-fill,
+  .bi-caret-down-fill {
+      color: coral;
+      cursor: pointer;
+  }
+
+  .ongkir {
+      font-size: 13px;
+      color: grey;
+      font-style: italic;
+      font-weight: 400;
+  }
+
+  .title-total {
+      font-weight: 800;
+      text-transform: uppercase;
+      color: #373F41;
+  }
+
+  .total-count {
+      font-size: 12px;
+  }
+
+  .embed-responsive {
+      margin: 1.8rem 1rem;
+  }
+
+  .bi-x-circle {
+      color: red;
+  }
+
+  .img-tiyokfood2 {
+      width: 65%;
+      margin-top: 4.5em;
+  }
+
+  .img-logo-order {
+      margin: 6em 0;
+      width: 100vh;
+  }
+
+  .cara-order {
+      margin: 2em 0;
+  }
+
+  .cara-pesan {
+      border-radius: 6px;
+      background-color: #38508F;
+      color: aliceblue;
+  }
+
+  .cara-pesan:hover {
+      background-color: #E4BC4A;
+      color: aliceblue;
+  }
+
+  .img-logo-order {
+      width: 60%;
+  }
+
+  .input-group-text {
+      min-width: 162px;
+  }
+
+  .img-order-whatsapp {
+      width: 80px;
+      margin: 1.2em 1em;
+  }
+
+  .artikel-kirim-whatsapp {
+      text-transform: capitalize;
+      font-size: 15px;
+      margin: 1.2em 1em;
+      font-weight: 400;
+  }
+
+  .nomor-wa {
+      font-weight: 800;
+      font-size: 16px;
+  }

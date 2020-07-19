@@ -43,8 +43,8 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                    <ul class="nav d-flex">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav d-flex ml-auto">
                         <li class="nav-item">
                             <a class="nav-link active" href="index.html">Beranda</a>
                         </li>
@@ -57,56 +57,64 @@
                         <li class="nav-item">
                             <a class="nav-link" href="./components/kontak.html">Kontak</a>
                         </li>
+                        <li class="nav-item">
+                                <a class="nav-link cara-pesan" href="./components/order.html">Cara Pemesanan</a>
+                        </li>
                     </ul>
                 </div>
-                  <!-- Cart -->
-                  <button type="button" class="btn btn-warning justify-content-center" data-toggle="modal"
-                  data-target="#cart">
-                  <h5 class="cart-title">keranjang(<span class="total-count"></span>)</h5>
-                  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bag-fill" fill="currentColor"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path
-                          d="M1 4h14v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4zm7-2.5A2.5 2.5 0 0 0 5.5 4h-1a3.5 3.5 0 1 1 7 0h-1A2.5 2.5 0 0 0 8 1.5z" />
-                  </svg>
-              </button>
-              <span id="itemCount"></span>
-              <button class="clear-cart btn">
-                  <svg width="0.8em" height="0.8em" viewBox="0 0 16 16" class="bi bi-x-circle" fill="currentColor"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd"
-                          d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                      <path fill-rule="evenodd"
-                          d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z" />
-                      <path fill-rule="evenodd"
-                          d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z" />
-                  </svg>
-              </button>
+                <!-- Cart -->
+                <!-- <button type="button" class="btn btn-warning cart-btn md ml-4 mr-auto" data-toggle="modal"
+                    data-target="#cart">
+                    <svg width="0.8em" height="0.8em" viewBox="0 0 16 16" class="bi bi-bag-fill" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M1 4h14v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4zm7-2.5A2.5 2.5 0 0 0 5.5 4h-1a3.5 3.5 0 1 1 7 0h-1A2.5 2.5 0 0 0 8 1.5z" />
+                    </svg>(<span class="total-count"></span>)
+                </button> -->
 
-              <!-- Cart Modal -->
-              <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                  aria-hidden="true">
-                  <div class="modal-dialog modal-lg" role="document">
-                      <div class="modal-content">
-                          <div class="modal-header">
-                              <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                  <span aria-hidden="true">&times;</span>
-                              </button>
-                          </div>
-                          <div class="modal-body">
-                              <table class="show-cart table">
+                <!-- <button class="clear-cart btn">
+                    <svg width="0.8em" height="0.8em" viewBox="0 0 16 16" class="bi bi-x-circle" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                        <path fill-rule="evenodd"
+                            d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z" />
+                        <path fill-rule="evenodd"
+                            d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z" />
+                    </svg>
+                </button> -->
 
-                              </table>
-                              <div>Total harga: Rp<span class="total-cart"></span></div>
-                          </div>
-                          <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Lanjut
-                                  Belanja</button>
-                              <button type="button" class="btn btn-primary">Pesan Sekarang</button>
-                          </div>
-                      </div>
-                  </div>
-              </div>
+                <!-- Cart Modal -->
+                <!-- <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Keranjang Anda</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <table class="show-cart table">
+                                    <div class="cart-content">
+
+                                    </div>
+                                </table>
+                                <div class="text-center lead title-total">Total harga: idr <span
+                                        class="total-price"></span></div>
+                                <p class="ongkir text-center">*Harga belum termasuk ongkos kirim</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Lanjut
+                                    Belanja</button>
+                                <button type="button" class="btn btn-primary order-btn">Pesan Sekarang</button>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- end of cart modal -->
+                <!-- end of cart -->
             </nav>
         </div>
     </header>
@@ -124,13 +132,51 @@
                         <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner text-center">
                                 <div class="carousel-item active">
-                                    <img src="assets/img/kacang-kriuk.png" class="img-fluid img-tiyokfood" alt="...">
+                                    <img src="assets/img/kacang-kriuk.png" class="img-fluid img-tiyokfood"
+                                        alt="TiyokFood">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="assets/img/kacang-kulit.png" class="img-fluid img-tiyokfood" alt="...">
+                                    <img src="assets/img/kacang-kulit.png" class="img-fluid img-tiyokfood"
+                                        alt="TiyokFood">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="assets/img/kacang-telur.png" class="img-fluid img-tiyokfood" alt="...">
+                                    <img src="assets/img/kacang-telur.png" class="img-fluid img-tiyokfood"
+                                        alt="TiyokFood">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/img/kacang-bawang.png" class="img-fluid img-tiyokfood"
+                                        alt="TiyokFood">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/img/atom-120.png" class="img-fluid img-tiyokfood" alt="TiyokFood">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/img/kacang-atom-kecil.png" class="img-fluid img-tiyokfood2"
+                                        alt="TiyokFood">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/img/kacang-bawang-kecil.png" class="img-fluid img-tiyokfood2"
+                                        alt="TiyokFood">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/img/kacang-kriuk-kecil.png" class="img-fluid img-tiyokfood2"
+                                        alt="TiyokFood">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/img/kacang-kulit-kecil.png" class="img-fluid img-tiyokfood2"
+                                        alt="TiyokFood">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/img/kacang-mede-kecil.png" class="img-fluid img-tiyokfood2"
+                                        alt="TiyokFood">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/img/kacang-telur-kecil.png" class="img-fluid img-tiyokfood2"
+                                        alt="TiyokFood">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/img/mete-wijen.png" class="img-fluid img-tiyokfood2"
+                                        alt="TiyokFood">
                                 </div>
                             </div>
                         </div>
@@ -145,7 +191,8 @@
                                     bahan baku yang terbaik dengan komposisi yang tepat agar dapat menghasilkan cita
                                     rasa istimewa.
                                 </p>
-                                <a href="./components/produk.html"><button type="button" class="btn btn-primary shadow btn-beli ">beli
+                                <a href="./components/produk.html"><button type="button"
+                                        class="btn btn-primary shadow btn-beli ">beli
                                         sekarang</button></a>
                         </div>
                     </div>
@@ -168,9 +215,12 @@
                 DENGAN 6 VARIAN RASA
             </h3>
             <div class="embed-responsive embed-responsive-16by9">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/c4O-fEdLpIY" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+                <iframe src="https://drive.google.com/file/d/1LEzkr89mch2ybwjoCdhHY3dV2Ooj2CS9/preview" width="426"
+                    height="240"></iframe>
+            </div>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe src="https://drive.google.com/file/d/1CndWUotVLXpwM9YfEEh1DALp-qFN_J_p/preview" width="640"
+                    height="480"></iframe>
             </div>
         </div>
     </section>
@@ -189,7 +239,8 @@
                     <p class="lead artikel-bumbu">
                         Bumbu masakan khas Indonesia, produk terbaru dari Tiyok Food untuk kuliner Nusantara
                     </p>
-                    <a href="#"><button class="btn btn-primary shadow btn-bumbu">lihat semua</button></a>
+                    <a href="./components/produk.html"><button class="btn btn-primary shadow btn-bumbu">lihat
+                            semua</button></a>
                 </div>
                 <div class="col-md-6 cpl-sm-6" data-aos="fade-right" data-aos-duration="2000">
                     <img src="./assets/img/gado-gado.jpg" class="img-fluid img-bumbu" alt="Bumbu Tiyok Food">
@@ -336,12 +387,14 @@
                                 </div>
                                 <div class="col-sm-3">
                                     <a href="http://facebook.com/tiyokfood">
-                                        <img src="./assets/img/facebook.svg" width="32" height="auto" alt="Facebook Icon">
+                                        <img src="./assets/img/facebook.svg" width="32" height="auto"
+                                            alt="Facebook Icon">
                                     </a>
                                 </div>
                                 <div class="col-sm-3">
                                     <a href="http://instagram.com/tiyokfood">
-                                        <img src="./assets/img/instagram.svg" width="32" height="auto" alt="Instagram Icon">
+                                        <img src="./assets/img/instagram.svg" width="32" height="auto"
+                                            alt="Instagram Icon">
                                     </a>
                                 </div>
                                 <div class="col-sm-3">
@@ -386,17 +439,7 @@
             easing: 'ease'
         });
     </script>
-    <script>        
-    fetch('data.json').then(function (response){      
-        return response.json();        
-        }).then(function (data){            
-            console.log(data);        
-            }).then(function (err){            
-                console.log('error: ' + err);        
-            });
-    </script>
-    <script src="script.js">
-    </script>
+    <!-- <script src="./js/cart.js"></script> -->
 </body>
 
 </html>

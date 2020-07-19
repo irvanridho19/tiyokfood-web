@@ -1,207 +1,202 @@
-// ************************************************
-// Shopping Cart API
-// ************************************************
+// variables
 
-var shoppingCart = (function() {
-    // =============================
-    // Private methods and propeties
-    // =============================
-    cart = [];
+// const cartBtn = document.querySelector('.cart-btn');
+// const clearCartBtn = document.querySelector('.clear-cart');
+// const totalCount = document.querySelector('.total-count');
+// const cartTotal = document.querySelector('.total-price');
+// const cartContent = document.querySelector('.cart-content');
+// const cartDOM = document.querySelector('.show-cart');
+const productsDOM = document.querySelector('.product-show');
 
-    // Constructor
-    function Item(name, price, count) {
-      this.name = name;
-      this.price = price;
-      this.count = count;
-    }
+// cart items 
+let cart = [];
 
-    // Save cart
-    function saveCart() {
-      sessionStorage.setItem('shoppingCart', JSON.stringify(cart));
-    }
+// buttons
+let buttonsDOM = [];
 
-      // Load cart
-    function loadCart() {
-      cart = JSON.parse(sessionStorage.getItem('shoppingCart'));
-    }
-    if (sessionStorage.getItem("shoppingCart") != null) {
-      loadCart();
-    }
-
-    // =============================
-    // Public methods and propeties
-    // =============================
-    var obj = {};
-
-    // Add to cart
-    obj.addItemToCart = function(name, price, count) {
-      for(var item in cart) {
-        if(cart[item].name === name) {
-          cart[item].count ++;
-          saveCart();
-          return;
-        }
-      }
-      var item = new Item(name, price, count);
-      cart.push(item);
-      saveCart();
-    }
-    // Set count from item
-    obj.setCountForItem = function(name, count) {
-      for(var i in cart) {
-        if (cart[i].name === name) {
-          cart[i].count = count;
-          break;
-        }
-      }
+// getting the products
+class Products {
+    async getProducts() {
+        try {
+            let result = await fetch('../data.json');
+            let data = await result.json();
+            let products = data.items;
+            products = products.map(item => {
+                const { title, price } = item.fields;
+                const { id } = item.sys;
+                const image = item.fields.image.fields.file.url;
+                return { title, price, id, image }
+            })
+            return products;
+        } catch (error) {
+            console.log(error);
+        };
     };
-    // Remove item from cart
-    obj.removeItemFromCart = function(name) {
-        for(var item in cart) {
-          if(cart[item].name === name) {
-            cart[item].count --;
-            if(cart[item].count === 0) {
-              cart.splice(item, 1);
-            }
-            break;
-          }
-      }
-      saveCart();
+};
+
+// display the products
+class UI {
+    displayProducts(products) {
+        let result = '';
+        products.forEach(product => {
+            result += `
+            <div class="col-sm-3 col-md-3">
+            <img
+                class="img-fluid img-kat" 
+                src=${product.image}
+                alt="Produk Tiyok"
+            >
+            <h5 class="text-kat">${product.title}</h5>
+            <h5 class="harga-kat">Rp ${product.price}</h5>
+            <!--<button type="button" 
+                class="add-cart btn btn-primary" data-id=${product.id}>
+            tambah ke keranjang
+            </button>-->
+            </div>
+            `;
+        });
+        productsDOM.innerHTML = result;
     }
+    // getBagButtons() {
+    //     const buttons = [...document.querySelectorAll('.add-cart')];
+    //     buttonsDOM = buttons;
+    //     buttons.forEach(button => {
+    //         let id = button.dataset.id;
+    //         let inCart = cart.find(item => item.id === id);
+    //         if (inCart) {
+    //             button.innerText = "Berhasil Ditambahkan";
+    //             button.disabled = true;
+    //         }
+    //         button.addEventListener('click', event => {
+    //             event.target.innerText = "Berhasil Ditambahkan";
+    //             event.target.disabled = true;
+    //             // get product from products
+    //             let cartItem = { ...Storage.getProduct(id), amount: 1 };
+    //             // add product to the cart
+    //             cart = [...cart, cartItem];
+    //             // save the cart in local storage
+    //             Storage.saveCart(cart);
+    //             // set cart values
+    //             this.setCartValues(cart);
+    //             // display cart item
+    //             this.addCartItem(cartItem);
+    //         });
+    //     });
+    // };
+    // setCartValues(cart) {
+    //     let tempTotal = 0;
+    //     let itemsTotal = 0;
+    //     cart.map(item => {
+    //         tempTotal += item.price * item.amount;
+    //         itemsTotal += item.amount
+    //     });
+    //     cartTotal.innerText = parseFloat(tempTotal.toFixed(2));
+    //     totalCount.innerText = itemsTotal;
+    // }
+    // addCartItem(item) {
+    //     const div = document.createElement('div')
+    //     div.classList.add('cart-item');
+    //     div.innerHTML = `
+    //     <img src=${item.image} 
+    //         alt="Tiyok Food">
+    //         <div>
+    //             <h4>${item.title}</h4>
+    //             <h5>Rp ${item.price}</h5>
+    //             <span class="remove-item" data-id=${item.id}>
+    //                 remove
+    //             </span>
+    //         </div>
+    //         <div>
+    //             <svg width="1em" height="1em" viewBox="0 0 16 16"
+    //                 class="bi bi-caret-up-fill" data-id=${item.id} fill="currentColor"
+    //                 xmlns="http://www.w3.org/2000/svg">
+    //                 <path
+    //                     d="M7.247 4.86l-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+    //             </svg>
+    //             <p class="total-amount">${item.amount}</p>
+    //             <svg width="1em" height="1em" viewBox="0 0 16 16"
+    //                 class="bi bi-caret-down-fill" data-id=${item.id} fill="currentColor"
+    //                 xmlns="http://www.w3.org/2000/svg">
+    //                 <path
+    //                     d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+    //             </svg>
+    //         </div>
+    //     `;
+    //     cartContent.appendChild(div);
+    // }
+    // setupAPP() {
+    //     cart = Storage.getCart();
+    //     this.setCartValues(cart);
+    //     this.populateCart(cart);
+    // }
+    // populateCart(cart) {
+    //     cart.forEach(item => this.addCartItem(item));
+    // }
+    // cartLogic() {
+    //     clearCartBtn.addEventListener('click',
+    //     () => {
+    //         this.clearCart()
+    //     });
+    //     //cart functionality
+    //     cartContent.addEventListener('click', event => {
+    //         if (event.target.classList.contains('remove-item')) {
+    //                 let removeItem = event.target;
+    //                 let id = removeItem.dataset.id;
+    //                 cartContent
+    //                 this.removeItem(id);              
+    //         }
+    //     });
+    // }
+    // clearCart() {
+    //     let cartItems = cart.map(item => item.id);
+    //     cartItems.forEach(id => this.removeItem(id));
+    //     console.log(cartContent.children);
+    //     while(cartContent.children.length > 0) {
+    //         cartContent.removeChild(cartContent.children[0]);
+    //     };
+    // };
+    // removeItem(id) {
+    //     cart = cart.filter(item => item.id !== id);
+    //     this.setCartValues(cart);
+    //     Storage.saveCart(cart);
+    //     let button = this.getSingleButton(id);
+    //     button.disabled = false;
+    //     button.innerText = "Tambah Ke Keranjang"
+    // }
+    // getSingleButton(id) {
+    //     return buttonsDOM.find(button => button.dataset.id === id);
+    // }
+};
 
-    // Remove all items from cart
-    obj.removeItemFromCartAll = function(name) {
-      for(var item in cart) {
-        if(cart[item].name === name) {
-          cart.splice(item, 1);
-          break;
-        }
-      }
-      saveCart();
-    }
+// local storage
+class Storage {
+    static saveProducts(products) {
+        localStorage.setItem("products", JSON.stringify(products));
+    };
+    // static getProduct(id) {
+    //     let products = JSON.parse(localStorage.getItem('products'));
+    //     return products.find(product => product.id === id);
+    // };
+    // static saveCart(cart) {
+    //     localStorage.setItem('cart', JSON.stringify(cart));
+    // }
+    // static getCart() {
+    //     return localStorage.getItem('cart') ?
+    //         JSON.parse(localStorage.getItem('cart')) : []
+    // }
+};
 
-    // Clear cart
-    obj.clearCart = function() {
-      cart = [];
-      saveCart();
-    }
-
-    // Count cart 
-    obj.totalCount = function() {
-      var totalCount = 0;
-      for(var item in cart) {
-        totalCount += cart[item].count;
-      }
-      return totalCount;
-    }
-
-    // Total cart
-    obj.totalCart = function() {
-      var totalCart = 0;
-      for(var item in cart) {
-        totalCart += cart[item].price * cart[item].count;
-      }
-      return Number(totalCart.toFixed(2));
-    }
-
-    // List cart
-    obj.listCart = function() {
-      var cartCopy = [];
-      for(i in cart) {
-        item = cart[i];
-        itemCopy = {};
-        for(p in item) {
-          itemCopy[p] = item[p];
-
-        }
-        itemCopy.total = Number(item.price * item.count).toFixed(2);
-        cartCopy.push(itemCopy)
-      }
-      return cartCopy;
-    }
-
-    // cart : Array
-    // Item : Object/Class
-    // addItemToCart : Function
-    // removeItemFromCart : Function
-    // removeItemFromCartAll : Function
-    // clearCart : Function
-    // countCart : Function
-    // totalCart : Function
-    // listCart : Function
-    // saveCart : Function
-    // loadCart : Function
-    return obj;
-  })();
-
-
-  // *****************************************
-  // Triggers / Events
-  // ***************************************** 
-  // Add item
-  $('.add-cart').click(function(event) {
-    event.preventDefault();
-    var name = $(this).data('name');
-    var price = Number($(this).data('price'));
-    shoppingCart.addItemToCart(name, price, 1);
-    displayCart();
-  });
-
-  // Clear items
-  $('.clear-cart').click(function() {
-    shoppingCart.clearCart();
-    displayCart();
-  });
-
-
-  function displayCart() {
-    var cartArray = shoppingCart.listCart();
-    var output = "";
-    for(var i in cartArray) {
-      output += "<tr>"
-        + "<td>" + cartArray[i].name + "</td>" 
-        + "<td>(" + cartArray[i].price + ")</td>"
-        + "<td><div class='input-group'><button class='minus-item input-group-addon btn btn-primary' data-name=" + cartArray[i].name + ">-</button>"
-        + "<input type='number' class='item-count form-control' data-name='" + cartArray[i].name + "' value='" + cartArray[i].count + "'>"
-        + "<button class='plus-item btn btn-primary input-group-addon' data-name=" + cartArray[i].name + ">+</button></div></td>"
-        + "<td><button class='delete-item btn btn-danger' data-name=" + cartArray[i].name + ">X</button></td>"
-        + " = " 
-        + "<td>" + cartArray[i].total + "</td>" 
-        +  "</tr>";
-    }
-    $('.show-cart').html(output);
-    $('.total-cart').html(shoppingCart.totalCart());
-    $('.total-count').html(shoppingCart.totalCount());
-  }
-
-  // Delete item button
-
-  $('.show-cart').on("click", ".delete-item", function(event) {
-    var name = $(this).data('name')
-    shoppingCart.removeItemFromCartAll(name);
-    displayCart();
-  })
-
-
-  // -1
-  $('.show-cart').on("click", ".minus-item", function(event) {
-    var name = $(this).data('name')
-    shoppingCart.removeItemFromCart(name);
-    displayCart();
-  })
-  // +1
-  $('.show-cart').on("click", ".plus-item", function(event) {
-    var name = $(this).data('name')
-    shoppingCart.addItemToCart(name);
-    displayCart();
-  })
-
-  // Item count input
-  $('.show-cart').on("change", ".item-count", function(event) {
-     var name = $(this).data('name');
-     var count = Number($(this).val());
-    shoppingCart.setCountForItem(name, count);
-    displayCart();
-  });
-
-  displayCart();
+// event listener
+document.addEventListener("DOMContentLoaded", () => {
+    const ui = new UI();
+    const products = new Products();
+    // get all products
+    products.getProducts().then(products => {
+        ui.displayProducts(products);
+        Storage.saveProducts(products);
+    })
+    // .then(() => {
+    //     ui.getBagButtons();
+    //     ui.cartLogic();
+    // });
+});

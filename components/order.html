@@ -21,7 +21,7 @@
     </style>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../css/style.css">
-    <title>Produk - Tiyok Food</title>
+    <title>Cara Order - Tiyok Food</title>
 </head>
 
 <body class="bg-light">
@@ -45,7 +45,7 @@
                             <a class="nav-link" href="../index.html">Beranda</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="produk.html">Produk</a>
+                            <a class="nav-link" href="produk.html">Produk</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="tentang.html">Tentang Kami</a>
@@ -58,18 +58,16 @@
                         </li>
                     </ul>
                 </div>
-
                 <!-- Cart -->
-                <!-- <button type="button" class="btn btn-warning cart-btn ml-4 mr-auto" data-toggle="modal" data-target="#cart">
+                <!-- <button type="button" class="btn btn-warning cart-btn md ml-4 mr-auto" data-toggle="modal" data-target="#cart">
                     <svg width="0.8em" height="0.8em" viewBox="0 0 16 16" class="bi bi-bag-fill" fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M1 4h14v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4zm7-2.5A2.5 2.5 0 0 0 5.5 4h-1a3.5 3.5 0 1 1 7 0h-1A2.5 2.5 0 0 0 8 1.5z" />
                     </svg>(<span class="total-count"></span>)
-                </button> -->
-                
-                <!-- clear cart -->
-                <!-- <button class="clear-cart btn ml-auto mr-auto">
+                </button>
+           
+                <button class="clear-cart btn">
                     <svg width="0.8em" height="0.8em" viewBox="0 0 16 16" class="bi bi-x-circle" fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd"
@@ -104,7 +102,9 @@
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Lanjut
                                     Belanja</button>
-                                <a href="./order.html"><button type="button" class="btn btn-primary order-btn">Pesan Sekarang</button></a>
+                                
+                                <a href="./order.html">
+                                <button type="button" class="btn btn-primary order-btn">Pesan Sekarang</button></a>
                             </div>
                         </div>
                     </div>
@@ -115,43 +115,78 @@
     </header>
     <!-- End of Header -->
 
-    <!-- Section of Title -->
-    <section class="produk">
+    <!-- Section of Cara Order -->
+    <section class="cara-order">
         <div class="container">
-            <div class="text-center">
-                <h1 class="judul-produk">Produk</h1>
-                <hr>
-            </div>
-            <p class="lead text-center p-produk">
-                Tiyok <em>Food</em> merupakan produk yang dihasilkan dari bahan berkualitas baik dan selalu dikontrol
-                dalam
-                proses produksinya serta dikemas dengan kemasan yang aman sehingga menghasilkan produk makanan yang
-                enak, dan tentunya baik kualitasnya.
-            </p>
-    </section>
-    <!-- End of Section -->
-
-    <!-- KATALOG -->
-    <section class="katalog-section">
-        <div class="container">
-            <div class="row text-center product-show">
-                <!-- JSON Integrated -->
+            <div class="row">
+                <div class="col-sm-4 col-md-4 justify-content-center">
+                    <img src="../assets/img/logo.png" class="img-fluid img-logo-order" alt="" srcset="">
+                </div>
+                <div class="col-sm-8 col-md-8 cara-order">
+                    <h3 class="title-cara-order">
+                        Cara Order
+                    </h3>
+                    <p class="lead artikel-order">
+                        Untuk pemesanan produk dari Tiyok Food, silakan untuk terlebih dahulu mengisi form berikut:
+                    </p>
+                    <label for="nama">Template Form Pemesanan</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon3">Nama</span>
+                        </div>
+                        <input type="text" class="form-control" id="nama" aria-describedby="basic-addon3"  placeholder="Budi Setiawan">
+                    </div>               
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon3">Alamat</span>
+                        </div>
+                        <input type="text" class="form-control" id="nama" aria-describedby="basic-addon3"  placeholder="Jalan Rawa Belong No. 15, Sukabumi Barat, Kebon Jeruk, Jakarta Barat. 11121">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon3">Pesanan & Jumlah</span>
+                        </div>
+                        <input type="text" class="form-control" id="nama" aria-describedby="basic-addon3" placeholder="Kacang Atom 120gr 2X, Kacang Kriuk 120gr 4X">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon3">No Telepon</span>
+                        </div>
+                        <input type="text" class="form-control" id="nama" aria-describedby="basic-addon3"  placeholder="08997711225">
+                    </div>
+                    <div class="artikel-whatsapp">
+                        <div class="row">
+                            <div class="col-sm-2 col-md-2 text-center">
+                                <img src="../assets/img/whatsapp.svg" class="img-order-whatsapp" alt="" srcset="">
+                            </div>
+                            <div class="col-sm-10 col-md-10">
+                                <p class="lead artikel-kirim-whatsapp">
+                                    setelah membuat form seperti diatas, kirimkan form pengiriman tersebut via <em>Whatsapp</em>
+                                    ke nomor: <span class="nomor-wa">0813 1515 5522</span>
+                                </p>
+                                <p class="lead artikel-kirim-whatsapp">
+                                    admin akan segera membalas pemesanan Anda, dengan harga total pesanan anda ditambahkan ongkos kirim ke tujuan anda serta tata cara pembayaran ke rekening resmi Tiyok <em>Food</em>. terimakasih.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+    <!-- End of Section -->
 
-
-    <!-- Footer -->
+    <!-- footer -->
     <footer class="footer-tiyok">
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-sm-3">
                     <ul class="list-group">
                         <li class="list-group-item list-footer"><strong>Website</strong></li>
-                        <a href="../components/tentang.html" class="link-footer">
+                        <a href="#" class="link-footer">
                             <li class="list-group-item list-footer">Tentang Kami</li>
                         </a>
-                        <a href="../components/kontak.html" class="link-footer">
+                        <a href="#" class="link-footer">
                             <li class="list-group-item list-footer">Kontak</li>
                         </a>
                         <a href="#" class="link-footer">
@@ -230,7 +265,6 @@
             </div>
         </div>
     </footer>
-    <!-- End of Footer -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -249,7 +283,6 @@
             easing: 'ease'
         });
     </script>
-    <script src="../js/cart.js"></script>
 </body>
 
 </html>
