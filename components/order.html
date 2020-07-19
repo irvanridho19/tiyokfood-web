@@ -21,7 +21,7 @@
     </style>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../css/style.css">
-    <title>Keranjang Anda - Tiyok Food</title>
+    <title>Cara Order - Tiyok Food</title>
 </head>
 
 <body class="bg-light">
@@ -55,72 +55,86 @@
                         </li>
                     </ul>
                 </div>
-                <a href="keranjang.html">
-                    <button type="button" class="btn btn-warning justify-content-center">
-                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bag-fill" fill="currentColor"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M1 4h14v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4zm7-2.5A2.5 2.5 0 0 0 5.5 4h-1a3.5 3.5 0 1 1 7 0h-1A2.5 2.5 0 0 0 8 1.5z" />
-                        </svg>
-                    </button>
-                </a>
+                <!-- Cart -->
+                <button type="button" class="btn btn-warning cart-btn md ml-4 mr-auto" data-toggle="modal" data-target="#cart">
+                    <!-- <h5 class="cart-title">keranjang(<span class="total-count"></span>)</h5> -->
+                    <svg width="0.8em" height="0.8em" viewBox="0 0 16 16" class="bi bi-bag-fill" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M1 4h14v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4zm7-2.5A2.5 2.5 0 0 0 5.5 4h-1a3.5 3.5 0 1 1 7 0h-1A2.5 2.5 0 0 0 8 1.5z" />
+                    </svg>(<span class="total-count"></span>)
+                </button>
+           
+                <button class="clear-cart btn">
+                    <svg width="0.8em" height="0.8em" viewBox="0 0 16 16" class="bi bi-x-circle" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                        <path fill-rule="evenodd"
+                            d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z" />
+                        <path fill-rule="evenodd"
+                            d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z" />
+                    </svg>
+                </button>
+
+                <!-- Cart Modal -->
+                <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Keranjang Anda</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <table class="show-cart table">
+                                    <div class="cart-content">
+                                        
+                                    </div>
+                                </table>
+                                <div class="text-center lead title-total">Total harga: idr <span class="total-price"></span></div>
+                                <p class="ongkir text-center">*Harga belum termasuk ongkos kirim</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Lanjut
+                                    Belanja</button>
+                                
+                                <a href="./order.html">
+                                <button type="button" class="btn btn-primary order-btn">Pesan Sekarang</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of cart modal -->
+                <!-- end of cart -->
             </nav>
         </div>
     </header>
     <!-- End of Header -->
 
-    <!-- Section of Title -->
-    <section class="keranjang">
+    <!-- Section of Cara Order -->
+    <section class="cara-order">
         <div class="container">
-            <div class="text-center">
-                <h1 class="judul-keranjang">Keranjang Anda</h1>
-                <hr>
-            </div>
+            <div class="row">
+                <div class="col-sm-4 col-md-4">
+                    <img src="../assets/img/logo.png" class="img-fluid img-logo-order" alt="" srcset="">
+                </div>
+                <div class="col-sm-8 col-md-8 cara-order">
+                    <h3 class="title-cara-order">
+                        Cara Order
+                    </h3>
+                    <p class="lead">
 
-            <!-- Header Keranjang -->
-        <div class="row">
-            <div class="col-sm-6 col-md-6">
-                <h5 class="table-keranjang-header">
-                    Produk
-                </h5>
-            </div>
-            <div class="col-sm-3 col-md-3">
-                <h5 class="table-keranjang-header">
-                    Quantity
-                </h5>
-            </div>
-            <div class="col-sm-3 col-md-3">
-                <h5 class="table-keranjang-header">
-                    Total
-                </h5>
+                    </p>
+                </div>
             </div>
         </div>
-        <hr>
-        <!-- End of Header -->
-
-        <div class="row">
-            <div class="col-sm-3 col-md-3 justify-content-center">
-                <img src="../assets/img/atom-120.png" class="img-fluid img-keranjang" alt="Kacang Atom">
-            </div>
-            <div class="col-sm-3 col-md-3">
-                <h5 class="produk-dibeli">
-                    Kacang Atom
-                </h5>
-                <h5 class="harga-dibeli">
-                    Rp 7.000
-                </h5>
-            </div>
-            <div class="col-sm-3 col-md-3">
-                2
-            </div>
-            <div class="col-sm-3 col-md-3">
-                3
-            </div>
-        </div>
-        
     </section>
     <!-- End of Section -->
 
+    <!-- footer -->
     <footer class="footer-tiyok">
         <div class="container">
             <div class="row">
@@ -225,6 +239,7 @@
     </script>
     <script src="../script.js">
     </script>
+    <script src="../js/cart.js"></script>
 </body>
 
 </html>

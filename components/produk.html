@@ -57,17 +57,16 @@
                 </div>
 
                 <!-- Cart -->
-                <button type="button" class="btn btn-warning justify-content-center" data-toggle="modal"
-                    data-target="#cart">
-                    <h5 class="cart-title">keranjang(<span class="total-count"></span>)</h5>
-                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bag-fill" fill="currentColor"
+                <button type="button" class="btn btn-warning cart-btn ml-4 mr-auto" data-toggle="modal" data-target="#cart">
+                    <svg width="0.8em" height="0.8em" viewBox="0 0 16 16" class="bi bi-bag-fill" fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M1 4h14v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4zm7-2.5A2.5 2.5 0 0 0 5.5 4h-1a3.5 3.5 0 1 1 7 0h-1A2.5 2.5 0 0 0 8 1.5z" />
-                    </svg>
+                    </svg>(<span class="total-count"></span>)
                 </button>
-                <span id="itemCount"></span>
-                <button class="clear-cart btn">
+                
+                <!-- clear cart -->
+                <button class="clear-cart btn ml-auto mr-auto">
                     <svg width="0.8em" height="0.8em" viewBox="0 0 16 16" class="bi bi-x-circle" fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd"
@@ -82,29 +81,33 @@
                 <!-- Cart Modal -->
                 <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
-                    <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                                <h5 class="modal-title" id="exampleModalLabel">Keranjang Anda</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
                             <div class="modal-body">
                                 <table class="show-cart table">
-
+                                    <div class="cart-content">
+                                        
+                                    </div>
                                 </table>
-                                <div>Total harga: Rp<span class="total-cart"></span></div>
+                                <div class="text-center lead title-total">Total harga: idr <span class="total-price"></span></div>
+                                <p class="ongkir text-center">*Harga belum termasuk ongkos kirim</p>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Lanjut
                                     Belanja</button>
-                                <button type="button" class="btn btn-primary">Pesan Sekarang</button>
+                                <a href="./order.html"><button type="button" class="btn btn-primary order-btn">Pesan Sekarang</button></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                
+                <!-- end of cart modal -->
+                <!-- end of cart -->
             </nav>
         </div>
     </header>
@@ -128,10 +131,104 @@
 
     <!-- KATALOG -->
     <section class="katalog-section">
-        <div id="katalog">
-
+        <div class="container">
+            <div class="row text-center product-show">
+                <!-- JSON Integrated -->
+            </div>
         </div>
     </section>
+
+
+    <!-- Footer -->
+    <footer class="footer-tiyok">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-3">
+                    <ul class="list-group">
+                        <li class="list-group-item list-footer"><strong>Website</strong></li>
+                        <a href="../components/tentang.html" class="link-footer">
+                            <li class="list-group-item list-footer">Tentang Kami</li>
+                        </a>
+                        <a href="../components/kontak.html" class="link-footer">
+                            <li class="list-group-item list-footer">Kontak</li>
+                        </a>
+                        <a href="#" class="link-footer">
+                            <li class="list-group-item list-footer">Bantuan</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <ul class="list-group">
+                        <li class="list-group-item list-footer"><strong>Alamat</strong></li>
+                        <li class="list-group-item list-footer title-cv-footer">CV Setia Warna Maju Sentosa</li>
+                        <li class="list-group-item list-footer link-footer">
+                            Pusat:<br>
+                            Jln. Sultan Iskandar Muda No. 18 I
+                            Pondok Indah Kebayoran Lama Selatan
+                            Jakarta Selatan
+                        </li>
+                        <li class="list-group-item list-footer link-footer">
+                            Cabang:<br>
+                            Jln. Bona Permai V Blok B2 No. 16
+                            Lebak Bulus
+                            Cilandak
+                            Jakarta Selatan
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <ul class="list-group">
+                        <li class="list-group-item list-footer"><strong>Kontak Kami</strong></li>
+                        <li class="list-group-item list-footer title-cv-footer">No. Telp : 0813 1515 5522</li>
+                    </ul>
+                    <ul class="list-group">
+                        <li class="list-group-item list-footer"><strong>Media Sosial</strong></li>
+                        <li class="list-group-item list-footer">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <a href="http://twitter.com/tiyokfood">
+                                        <img src="../assets/img/twitter.svg" width="32" height="auto"
+                                            alt="Twitter Icon">
+                                    </a>
+                                </div>
+                                <div class="col-sm-3">
+                                    <a href="http://facebook.com/tiyokfood">
+                                        <img src="../assets/img/facebook.svg" width="32" height="auto"
+                                            alt="Facebook Icon">
+                                    </a>
+                                </div>
+                                <div class="col-sm-3">
+                                    <a href="http://instagram.com/tiyokfood">
+                                        <img src="../assets/img/instagram.svg" width="32" height="auto"
+                                            alt="Instagram Icon">
+                                    </a>
+                                </div>
+                                <div class="col-sm-3">
+                                    <a href="http://youtube.com">
+                                        <img src="../assets/img/youtube.svg" width="32" height="auto"
+                                            alt="Youtube Icon">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <ul class="list-group">
+                        <li class="list-group-item list-footer"><strong>Diproduksi oleh:</strong></li>
+                        <li class="list-group-item list-footer">
+                            <img src="../assets/img/logo-cv.png" class="img-fluid logo-cv" alt="Logo CV">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card-footer text-muted text-center">
+                <img src="../assets/img/logo-footer.png" class="img-fluid" alt="Tiyok Food Footer">
+                &copy; Copyright 2020. Tiyok <em>Food</em>. All Right Reserved
+            </div>
+        </div>
+    </footer>
+    <!-- End of Footer -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -150,68 +247,7 @@
             easing: 'ease'
         });
     </script>
-    <script src="https://code.jquery.com/jquery-3.5.1.js"
-        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <script>
-        fetch('../data.json')
-            .then(function (response) {
-                return response.json();
-            })
-            .then(function (data) {
-                // for (let index = 0; index < data.length; index++) {
-                $("#katalog").append(
-                    '<div class="row text-center">' +
-                    '<div class="col-sm-4">' +
-                    "<img class='img-fluid img-kat' src='" + data[0].thumbnailUrl + "'>" +
-                    '<h5 class="text-kat">' + data[0].nama + '</h5>' +
-                    '<h5 class="harga-kat">' + 'Rp' + ' ' + '<span class="hargaItem">' + data[0].harga +
-                    '</span>' + '</h5>' +
-                    '<button type="button" class="add-cart btn btn-primary">' +
-                    '<h5 class="beli">' + 'tambah ke keranjang' + '</h5>' +
-                    '</button>' +
-                    '</div>' +
-                    '<div class="col-sm-4">' +
-                    "<img class='img-fluid img-kat' src='" + data[1].thumbnailUrl + "'>" +
-                    '<h5 class="text-kat">' + data[1].nama + '</h5>' +
-                    '<h5 class="harga-kat">' + 'Rp' + ' ' + '<span class="hargaItem">' + data[1].harga +
-                    '</span>' + '</h5>' +
-                    '<button type="button" class="add-cart btn btn-primary">' +
-                    '<h5 class="beli">' + 'tambah ke keranjang' + '</h5>' +
-                    '</button>' +
-                    '</div>' +
-                    '<div class="col-sm-4">' +
-                    "<img class='img-fluid img-kat' src='" + data[2].thumbnailUrl + "'>" +
-                    '<h5 class="text-kat">' + data[2].nama + '</h5>' +
-                    '<h5 class="harga-kat">' + 'Rp' + ' ' + '<span class="hargaItem">' + data[0].harga +
-                    '</span>' + '</h5>' +
-                    '<button type="button" class="add-cart btn btn-primary">' +
-                    '<h5 class="beli">' + 'tambah ke keranjang' + '</h5>' +
-                    '</button>' +
-                    '</div>' +
-                    '</div'
-                );
-                var itemCount = 0;
-                var priceTotal = 0;
-
-                $("#katalog").on("click", "button", function () {
-                    itemCount++;
-                    $('.total-count').text(itemCount);
-                    var rep = $(this).siblings().find('.hargaItem').html();
-                    var price = Number(rep.replace(/[^0-9\.-]+/g, ""));
-                    console.log(rep);
-                    priceTotal += price;
-                    $('.total-cart').text(priceTotal);
-                });
-                
-                // open Cart
-            })
-
-            .catch(function (err) {
-                console.log('error: ' + err);
-            });
-    </script>
-    <script src="../script.js"></script>
-    <!-- <script src="../js/cart.js"></script> -->
+    <script src="../js/cart.js"></script>
 </body>
 
 </html>
