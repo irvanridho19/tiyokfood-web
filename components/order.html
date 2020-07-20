@@ -121,7 +121,7 @@
                 <img src="../assets/img/logo.png" class="img-fluid img-logo-order" alt="" srcset="">
             </div>
             <h5 class="total-checkout">
-                Total Rp <span id="total-belanja"></span>
+                Total Rp <span class="total-belanja"></span>
             </h5>
             <form class="form-order">
                 <div class="form-group">
@@ -285,9 +285,14 @@
     <script src="../js/cart.js"></script>
     <script>
         'use strict';
-
-        function cartValues() {
-            document.getElementById('total-belanja').innerText = localStorage.getItem('cart');
+            // document.getElementById('#total-belanja').innerText = localStorage.getItem('itemsTotal');
+        window.onload = function () {
+            let name = localStorage.getItem('total');
+            if (name !== null) {
+                // console.log(name);
+                let num = parseFloat(name).toFixed(2);
+                $(".total-checkout").append(num);
+            }
         };
     </script>
 </body>

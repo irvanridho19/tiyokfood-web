@@ -7,6 +7,7 @@ const cartTotal = document.querySelector('.total-price');
 const cartContent = document.querySelector('.cart-content');
 const cartDOM = document.querySelector('.show-cart');
 const productsDOM = document.querySelector('.product-show');
+const totalBelanja = document.querySelector('.total-belanja');
 
 // cart items 
 let cart = [];
@@ -88,11 +89,13 @@ class UI {
         let itemsTotal = 0;
         cart.map(item => {
             tempTotal += item.price * item.amount;
-            itemsTotal += item.amount
+            itemsTotal += item.amount;
         });
-        cartTotal.innerText = parseFloat(tempTotal.toFixed(2));
+        console.log(tempTotal, itemsTotal);
+        cartTotal.innerText = parseInt(tempTotal);
         totalCount.innerText = itemsTotal;
     }
+    
     addCartItem(item) {
         const div = document.createElement('div')
         div.classList.add('cart-item');
@@ -208,6 +211,9 @@ class Storage {
     static getCart() {
         return localStorage.getItem('cart') ?
             JSON.parse(localStorage.getItem('cart')) : []
+    }
+    static totalCart() {
+        return localStorage.setItem('itemsTotal', JSON.stringify(itemsTotal));
     }
 };
 
