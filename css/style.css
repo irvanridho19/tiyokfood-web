@@ -446,3 +446,24 @@
   .cara-order {
       margin: 2em 0;
   }
+
+  .img-logo-order {
+      width: 180px;
+  }
+
+  .total-checkout {
+      text-align: center;
+      color: #373F41;
+      font-weight: 800;
+      font-size: 24px;
+  }
+
+  .form-order {
+      margin: 2.2em 0;
+  }
+
+  .btn-pesan {
+      width: 10.6em;
+      border-radius: 4px;
+      text-transform: uppercase;
+  }

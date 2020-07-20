@@ -166,12 +166,14 @@
                         </div>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-primary">Pesan</button>
-                <a href="../components/produk.html">
-                    <button class="btn btn-secondary kembali">
-                        kembali
-                    </button>
-                </a>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary btn-pesan">Pesan</button>
+                    <a href="../components/produk.html">
+                        <button class="btn btn-secondary kembali">
+                            Kembali
+                        </button>
+                    </a>
+                </div>
             </form>
         </div>
     </section>
@@ -283,7 +285,8 @@
     <script src="../js/cart.js"></script>
     <script>
         'use strict';
-        function cartValues () {
+
+        function cartValues() {
             document.getElementById('total-belanja').innerText = localStorage.getItem('cart');
         };
     </script>
