@@ -1,5 +1,6 @@
 # tiyokfood
-Front-End of Tiyok Food Website Development, Using Bootstrap Framework &amp; Jquery
+Tiyok Food Website Development, Using Bootstrap HTML CSS JS
+Vanilla JS
 
 Author : Irvan Ridho
 License : WBA Indonesia
