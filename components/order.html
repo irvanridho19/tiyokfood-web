@@ -27,7 +27,7 @@
 <body class="bg-light">
 
     <!-- Header Section -->
-    <header>
+    <!-- <header>
         <div class="container bg-light">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <a class="navbar-brand" href="#">
@@ -54,10 +54,10 @@
                             <a class="nav-link" href="kontak.html">Kontak</a>
                         </li>
                     </ul>
-                </div>
-                <!-- Cart -->
-                <button type="button" class="btn btn-warning cart-btn md ml-4 mr-auto" data-toggle="modal" data-target="#cart">
-                    <!-- <h5 class="cart-title">keranjang(<span class="total-count"></span>)</h5> -->
+                </div> -->
+
+    <!-- Cart -->
+    <!-- <button type="button" class="btn btn-warning cart-btn md ml-4 mr-auto" data-toggle="modal" data-target="#cart">
                     <svg width="0.8em" height="0.8em" viewBox="0 0 16 16" class="bi bi-bag-fill" fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -75,10 +75,10 @@
                         <path fill-rule="evenodd"
                             d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z" />
                     </svg>
-                </button>
+                </button> -->
 
-                <!-- Cart Modal -->
-                <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    <!-- Cart Modal -->
+    <!-- <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
                     <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
                         <div class="modal-content">
@@ -106,36 +106,79 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- end of cart modal -->
-                <!-- end of cart -->
-            </nav>
+                </div> -->
+    <!-- end of cart modal -->
+    <!-- end of cart -->
+    <!-- </nav>
         </div>
-    </header>
+    </header> -->
     <!-- End of Header -->
 
     <!-- Section of Cara Order -->
-    <section class="cara-order">
+    <section class="order-checkout">
         <div class="container">
-            <div class="row">
-                <div class="col-sm-4 col-md-4">
-                    <img src="../assets/img/logo.png" class="img-fluid img-logo-order" alt="" srcset="">
-                </div>
-                <div class="col-sm-8 col-md-8 cara-order">
-                    <h3 class="title-cara-order">
-                        Cara Order
-                    </h3>
-                    <p class="lead">
-
-                    </p>
-                </div>
+            <div class="order-header text-center">
+                <img src="../assets/img/logo.png" class="img-fluid img-logo-order" alt="" srcset="">
             </div>
+            <h5 class="total-checkout">
+                Total Rp <span id="total-belanja"></span>
+            </h5>
+            <form class="form-order">
+                <div class="form-group">
+                    <label for="nama">Nama</label>
+                    <input type="text" class="form-control" id="nama">
+                </div>
+                <div class="form-group">
+                    <label for="alamat">Alamat</label>
+                    <input type="text" class="form-control" id="alamat">
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="provinsi">Provinsi</label>
+                            <select class="form-control" id="provinsi">
+                                <option>1</option>
+                                <option>2</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="kota">Kota</label>
+                            <select class="form-control" id="kota">
+                                <option>1</option>
+                                <option>2</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div class="form-group">
+                            <label for="telepon">Nomor Telepon</label>
+                            <input type="text" class="form-control" id="telepon">
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for="kode-pos">Kode Pos</label>
+                            <input type="text" class="form-control" id="kode-pos">
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Pesan</button>
+                <a href="../components/produk.html">
+                    <button class="btn btn-secondary kembali">
+                        kembali
+                    </button>
+                </a>
+            </form>
         </div>
     </section>
     <!-- End of Section -->
 
     <!-- footer -->
-    <footer class="footer-tiyok">
+    <!-- <footer class="footer-tiyok">
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-sm-3">
@@ -218,7 +261,7 @@
                 &copy; Copyright 2020. Tiyok <em>Food</em>. All Right Reserved
             </div>
         </div>
-    </footer>
+    </footer> -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -237,9 +280,13 @@
             easing: 'ease'
         });
     </script>
-    <script src="../script.js">
-    </script>
     <script src="../js/cart.js"></script>
+    <script>
+        'use strict';
+        function cartValues () {
+            document.getElementById('total-belanja').innerText = localStorage.getItem('cart');
+        };
+    </script>
 </body>
 
 </html>
