@@ -70,7 +70,7 @@
                 </button>
 
                 <!-- clear cart -->
-                <button class="clear-cart btn ml-auto mr-auto">
+                <!-- <button class="clear-cart btn ml-auto mr-auto">
                     <svg width="0.8em" height="0.8em" viewBox="0 0 16 16" class="bi bi-x-circle" fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd"
@@ -80,7 +80,7 @@
                         <path fill-rule="evenodd"
                             d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z" />
                     </svg>
-                </button>
+                </button> -->
 
                 <!-- Cart Modal -->
                 <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -99,7 +99,12 @@
 
                                     </div>
                                 </table>
-                                <div class="text-center lead title-total">Total harga: idr <span
+                                <div class="text-center">
+                                    <button class="clear-cart btn btn-danger">
+                                        Kosongkan Keranjang
+                                    </button>
+                                </div>
+                                <div class="text-center lead title-total">Total harga: <span
                                         class="total-price"></span></div>
                                 <p class="ongkir text-center">*Harga belum termasuk ongkos kirim</p>
                             </div>
@@ -108,6 +113,9 @@
                                     Belanja</button>
                                 <a href="./order.html"><button type="button" class="btn btn-primary order-btn">Pesan
                                         Sekarang</button></a>
+                                <!-- <button class="clear-cart btn btn-danger">
+                                    Kosongkan Keranjang
+                                </button> -->
                             </div>
                         </div>
                     </div>
@@ -255,19 +263,13 @@
     </script>
     <script src="../js/cart.js"></script>
     <script>
-        // let price = $('.total-price').text();
-        // let a = $('.total-price').html();
-        // var textFieldVal = $("#cart .modal-dialog .modal-content .modal-body .title-total .total-price").val();
-
-        // localStorage.setItem('total', price);
-        // console.log(textFieldVal);
+        "use strict";
 
         $(document).ready(function () {
-
-            $('#cart').on('click', '.order-btn', function (e) {
-                localStorage.setItem('total', $('.total-price').text());
-                // console.log($('.total-price').text());
-                // console.log(e);
+            
+            $('#cart').on('click', '.order-btn',
+            function (e) {
+                sessionStorage.setItem('total', $('.total-price').text());
             });
 
         });

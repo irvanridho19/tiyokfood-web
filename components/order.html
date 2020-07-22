@@ -123,9 +123,35 @@
             <div class="order-header text-center">
                 <img src="../assets/img/logo.png" class="img-fluid img-logo-order" alt="" srcset="">
             </div>
+            <div class="lead text-center title-checkout">
+                Keranjang Anda
+            </div>
+            <div class="itemKeranjang">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col-sm-4">Produk</th>
+                            <th scope="col-sm-4">Nama Produk</th>
+                            <th scope="col-sm-2">Harga</th>
+                            <th scope="col-sm-2">Jumlah</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-checkout">
+                        <!-- <tr>
+                            <td>
+                                <img src="../assets/img/atom-120.png" alt="Tiyok Food" class="img-fluid img-checkout">
+                            </td>
+                            <td class="title-item-checkout">Kacang Atom</td>
+                            <td class="harga-satuan-checkout">Rp<span>7000</span></td>
+                            <td>4</td>
+                        </tr> -->
+                    </tbody>
+                </table>
+            </div>
             <h5 class="total-checkout">
-                Total Rp <span class="total-belanja"></span>
+                Total <span class="total-belanja"></span>
             </h5>
+
             <form class="form-order">
                 <div class="form-group">
                     <label for="nama">Nama</label>
@@ -288,13 +314,32 @@
     <script src="../js/cart.js"></script>
     <script>
         'use strict';
-        // document.getElementById('#total-belanja').innerText = localStorage.getItem('itemsTotal');
+        
+        const checkoutItems = sessionStorage.getItem('cart');
+        const ckLength = checkoutItems.length;
+        // console.log(ckLength);
+        var tet = new Converter();
+        var rupiah = 'rupiah';
+        let jsonData = JSON.parse(checkoutItems);
+        for (let i = 0; i < jsonData.length; i++) {
+            let checkout = jsonData[i];
+            $('.table-checkout').append(`
+                        <tr>
+                            <td>
+                                <img src=${checkout.image} alt="Tiyok Food" class="img-fluid img-checkout">
+                            </td>
+                            <td class="title-item-checkout">${checkout.title}</td>
+                            <td class="harga-satuan-checkout"><span>${tet.rupiah(checkout.price,rupiah)}</span></td>
+                            <td>${checkout.amount}</td>
+                        </tr>
+                `);
+        }
+
+
         window.onload = function () {
-            let name = localStorage.getItem('total');
+            let name = sessionStorage.getItem('total');
             if (name !== null) {
-                // console.log(name);
-                let num = parseFloat(name).toFixed(2);
-                $(".total-checkout").append(num);
+                $(".total-checkout").append(name);
             }
         };
     </script>

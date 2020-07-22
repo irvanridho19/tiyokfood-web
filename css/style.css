@@ -467,3 +467,37 @@
       border-radius: 4px;
       text-transform: uppercase;
   }
+
+  .clear-cart {
+      font-size: 12px;
+      text-transform: capitalize;
+      background-color: coral;
+      border: none;
+      border-radius: 4px;
+      margin: 1.2em 0;
+  }
+
+  .title-checkout {
+      font-size: 2em;
+      font-weight: 700;
+      margin: 1.2em;
+  }
+
+  .total-belanja {
+      font-size: 1.8em;
+  }
+
+  .img-checkout {
+      width: 80px;
+      margin: 1em;
+  }
+
+.harga-satuan-checkout {
+    font-weight: 800;
+}
+
+.title-item-checkout {
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: capitalize;
+}
