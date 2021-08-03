@@ -501,3 +501,27 @@
     font-weight: 800;
     text-transform: capitalize;
 }
+
+.btn-reseller-component a {
+    background-color: #38508F;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 600px) {
+    .nav {
+        flex-direction: column !important;
+        margin-bottom: 20px;
+    }
+
+    .cart-btn {
+        margin: auto !important;
+    }
+
+    .navbar-toggler {
+        margin: auto !important;
+    }
+  }

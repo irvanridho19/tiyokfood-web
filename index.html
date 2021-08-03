@@ -47,7 +47,7 @@
                 </button>
 
                 <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                    <ul class="nav d-flex">
+                    <ul class="nav d-flex align-items-center">
                         <li class="nav-item">
                             <a class="nav-link active" href="index.html">Beranda</a>
                         </li>
@@ -60,30 +60,26 @@
                         <li class="nav-item">
                             <a class="nav-link" href="./components/kontak.html">Kontak</a>
                         </li>
+                        <li class="nav-item">
+                            <!-- Link Reseller -->
+                            <div class="btn-reseller-component">
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSf7qDZ4sfNKKG1H150kUaGiyZhwx0ec0Yo7L72qvhdtRR3eHg/viewform?usp=pp_url"
+                                    target="_blank">Menjadi Reseller!</a>
+                            </div>
+                            <!-- End Link Reseller -->
+                        </li>
                     </ul>
                 </div>
+
                 <!-- Cart -->
                 <button type="button" class="btn btn-warning cart-btn md ml-4 mr-auto" data-toggle="modal"
                     data-target="#cart">
-                    <!-- <h5 class="cart-title">keranjang(<span class="total-count"></span>)</h5> -->
                     <svg width="0.8em" height="0.8em" viewBox="0 0 16 16" class="bi bi-bag-fill" fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M1 4h14v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4zm7-2.5A2.5 2.5 0 0 0 5.5 4h-1a3.5 3.5 0 1 1 7 0h-1A2.5 2.5 0 0 0 8 1.5z" />
                     </svg>(<span class="total-count"></span>)
                 </button>
-
-                <!-- <button class="clear-cart btn">
-                    <svg width="0.8em" height="0.8em" viewBox="0 0 16 16" class="bi bi-x-circle" fill="currentColor"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                        <path fill-rule="evenodd"
-                            d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z" />
-                        <path fill-rule="evenodd"
-                            d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z" />
-                    </svg>
-                </button> -->
 
                 <!-- Cart Modal -->
                 <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -107,14 +103,15 @@
                                         Kosongkan Keranjang
                                     </button>
                                 </div>
-                                <div class="text-center lead title-total">Total harga: <span
-                                        class="total-price"></span></div>
+                                <div class="text-center lead title-total">Total harga: <span class="total-price"></span>
+                                </div>
                                 <p class="ongkir text-center">*Harga belum termasuk ongkos kirim</p>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Lanjut
                                     Belanja</button>
-                                <a href="./components/order.html"><button type="button" class="btn btn-primary order-btn">Pesan
+                                <a href="./components/order.html"><button type="button"
+                                        class="btn btn-primary order-btn">Pesan
                                         Sekarang</button></a>
                             </div>
                         </div>
@@ -133,9 +130,6 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-sm-6">
-                        <!-- <div class="text-center">
-                            <img src="assets/img/atom-120.png" class="img-fluid img-tiyokfood" alt="Tiyok Food">
-                        </div> -->
                         <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner text-center">
                                 <div class="carousel-item active">
@@ -223,11 +217,11 @@
             </h3>
             <div class="embed-responsive embed-responsive-16by9">
                 <iframe src="https://drive.google.com/file/d/1LEzkr89mch2ybwjoCdhHY3dV2Ooj2CS9/preview" width="426"
-                    height="240"></iframe>
+                    height="240" title="Video Tiyok Food"></iframe>
             </div>
             <div class="embed-responsive embed-responsive-16by9">
                 <iframe src="https://drive.google.com/file/d/1CndWUotVLXpwM9YfEEh1DALp-qFN_J_p/preview" width="640"
-                    height="480"></iframe>
+                    height="480" title="Video Tiyok Food"></iframe>
             </div>
         </div>
     </section>
@@ -433,13 +427,13 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
