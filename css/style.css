@@ -1,508 +1,507 @@
 .nav-link {
-    color: #373F41;
-    font-weight: 600;
+  color: #373f41;
+  font-weight: 600;
 }
 
 .active {
-    color: #38508F;
-    font-weight: 800;
+  color: #38508f;
+  font-weight: 800;
 }
 
 .bg-slider {
-    background-image: url("../assets/img/background-slider.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    min-height: 600px;
+  background-image: url("../assets/img/background-slider.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 600px;
 }
 
 .img-tiyokfood {
-    width: 75%;
-    margin-top: 4.5em;
+  width: 75%;
+  margin-top: 4.5em;
 }
 
 .title {
-    text-transform: uppercase;
-    font-weight: 800;
-    color: #373F41;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #373f41;
 }
 
 .desc-right {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .hero-right {
-    margin: 8em 0;
+  margin: 8em 0;
 }
 
 .btn-beli {
-    background-color: #E4BC4A;
-    width: 255px;
-    height: 48px;
-    color: white;
-    text-transform: uppercase;
-    border-radius: 12px;
-    border-color: #E4BC4A;
-    font-weight: bold;
+  background-color: #e4bc4a;
+  width: 255px;
+  height: 48px;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 12px;
+  border-color: #e4bc4a;
+  font-weight: bold;
 }
 
 .gap-100 {
-    margin: 6em auto;
+  margin: 6em auto;
 }
 
 .video-title {
-    text-transform: uppercase;
-    color: #373F41;
-    font-weight: 600;
-    letter-spacing: 2px;
-    padding-bottom: 10px;
+  text-transform: uppercase;
+  color: #373f41;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding-bottom: 10px;
 }
 
 .bg-bumbu {
-    background-image: url("../assets/img/background-bumbu.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    min-height: 600px;
+  background-image: url("../assets/img/background-bumbu.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 600px;
 }
 
 .judul-bumbu {
-    margin-top: 6em;
-    font-weight: bold;
+  margin-top: 6em;
+  font-weight: bold;
 }
 
 .btn-bumbu {
-    text-transform: uppercase;
-    width: 255px;
-    height: 48px;
-    color: white;
-    font-weight: bold;
-    background-color: #38508F;
-    border: none;
-    border-radius: 12px;
+  text-transform: uppercase;
+  width: 255px;
+  height: 48px;
+  color: white;
+  font-weight: bold;
+  background-color: #38508f;
+  border: none;
+  border-radius: 12px;
 }
 
 .img-bumbu {
-    width: 540px;
-    height: auto;
-    margin-top: 8.3em;
+  width: 540px;
+  height: auto;
+  margin-top: 8.3em;
 }
 
 .title-rekomendasi {
-    color: #373F41;
-    font-weight: 800;
-    letter-spacing: 1px;
-    text-transform: capitalize;
-    font-size: 24px;
+  color: #373f41;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  font-size: 24px;
 }
 
 .img-rekomen {
-    width: 140px;
-    height: auto;
+  width: 140px;
+  height: auto;
 }
 
 .rekomendasi {
-    margin: 4em 0;
+  margin: 4em 0;
 }
 
 .rekomendasi img {
-    padding: 20px 0;
-    transition: ease-in-out 0.6s;
-    cursor: pointer;
+  padding: 20px 0;
+  transition: ease-in-out 0.6s;
+  cursor: pointer;
 }
 
 .rekomendasi img:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .title-produk {
-    margin: 10px;
-    color: #373F41;
-    font-size: 16px;
-    font-weight: 400;
+  margin: 10px;
+  color: #373f41;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .harga {
-    margin: 8px;
-    color: darkgray;
-    font-weight: 400;
+  margin: 8px;
+  color: darkgray;
+  font-weight: 400;
 }
 
-
 .btn-rekomendasi-m {
-    margin: 1.8em;
+  margin: 1.8em;
 }
 
 .btn-rekomendasi {
-    width: 280px;
-    height: 42px;
-    background-color: #38508F;
-    border-radius: 20px;
-    border: none;
-    text-transform: uppercase;
-    font-weight: bold;
+  width: 280px;
+  height: 42px;
+  background-color: #38508f;
+  border-radius: 20px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .marketplace-info {
-    padding: 10px 0;
+  padding: 10px 0;
 }
 
 .marketplace-title {
-    color: #373F41;
-    font-weight: 600;
-    font-size: 18px;
+  color: #373f41;
+  font-weight: 600;
+  font-size: 18px;
 }
 
 .p-marketplace {
-    padding: 2em;
+  padding: 2em;
 }
 
 .footer-tiyok {
-    padding: 20px;
-    background-color: #F2C94C;
-    width: 100%;
-    min-height: 420px;
+  padding: 20px;
+  background-color: #f2c94c;
+  width: 100%;
+  min-height: 420px;
 }
 
 .list-footer {
-    background-color: #F2C94C;
-    border: none;
+  background-color: #f2c94c;
+  border: none;
 }
 
 .link-footer {
-    color: #373F41;
-    font-size: 14px;
+  color: #373f41;
+  font-size: 14px;
 }
 
 .title-cv-footer {
-    font-size: 16px;
-    font-weight: 800;
+  font-size: 16px;
+  font-weight: 800;
 }
 
 .logo-cv {
-    width: 257px;
-    height: auto;
+  width: 257px;
+  height: auto;
 }
 
 .produk {
-    margin: 3.6em 0;
+  margin: 3.6em 0;
 }
 
 .judul-produk {
-    color: #38508F;
-    font-weight: 800;
-    font-size: 36px;
+  color: #38508f;
+  font-weight: 800;
+  font-size: 36px;
 }
 
 .p-produk {
-    font-size: 18px;
-    font-weight: 300;
+  font-size: 18px;
+  font-weight: 300;
 }
 
 .filter-produk {
-    margin: 2em 0;
+  margin: 2em 0;
 }
 
 .tentang {
-    margin: 3.6em 0;
+  margin: 3.6em 0;
 }
 
 .jud-tentang {
-    color: #38508F;
-    font-weight: 800;
-    font-size: 36px;
+  color: #38508f;
+  font-weight: 800;
+  font-size: 36px;
 }
 
 .img-tentang {
-    margin: 1.4em 0;
+  margin: 1.4em 0;
 }
 
 .p-tentang {
-    padding: 10px;
-    font-size: 18px;
-    font-weight: 300;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 300;
 }
 
 .img-gallery {
-    margin: 1.8em 0;
+  margin: 1.8em 0;
 }
 
 .kontak {
-    margin: 3.6em 0;
+  margin: 3.6em 0;
 }
 
 .alamat {
-    font-weight: 300;
+  font-weight: 300;
 }
 
 .alamat-kontak {
-    font-weight: 700;
-    margin: 1.2em 0;
-    margin-bottom: 0.5em;
+  font-weight: 700;
+  margin: 1.2em 0;
+  margin-bottom: 0.5em;
 }
 
 .katalog {
-    margin: 2em 20px;
+  margin: 2em 20px;
 }
 
 .img-katalog {
-    width: 180px;
+  width: 180px;
 }
 
 .katalog img {
-    transition: ease-in-out 0.6s;
-    cursor: pointer;
+  transition: ease-in-out 0.6s;
+  cursor: pointer;
 }
 
 .katalog img:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .produk-katalog {
-    font-size: 16px;
-    font-weight: 400;
-    color: #373F41;
+  font-size: 16px;
+  font-weight: 400;
+  color: #373f41;
 }
 
 .harga.katalog {
-    font-size: 16px;
-    font-weight: 800;
-    color: #E4BC4A;
+  font-size: 16px;
+  font-weight: 800;
+  color: #e4bc4a;
 }
 
 .nama-p {
-    font-size: 16px;
-    font-weight: 400;
-    color: #373F41;
+  font-size: 16px;
+  font-weight: 400;
+  color: #373f41;
 }
 
 .harga-p {
-    font-size: 18px;
-    font-weight: 800;
-    color: #E4BC4A;
+  font-size: 18px;
+  font-weight: 800;
+  color: #e4bc4a;
 }
 
 .tombol-beli {
-    width: 8em;
-    font-weight: 800;
-    font-size: 16px;
-    letter-spacing: 1px;
+  width: 8em;
+  font-weight: 800;
+  font-size: 16px;
+  letter-spacing: 1px;
 }
 
 .keranjang {
-    margin: 3.6em 0;
+  margin: 3.6em 0;
 }
 
 .judul-keranjang {
-    color: #38508F;
-    font-weight: 800;
-    font-size: 36px;
+  color: #38508f;
+  font-weight: 800;
+  font-size: 36px;
 }
 
 .table-keranjang-header {
-    font-size: 16px;
-    font-weight: 700;
-    color: #373F41;
+  font-size: 16px;
+  font-weight: 700;
+  color: #373f41;
 }
 
 .img-keranjang {
-    width: 120px;
-    height: auto;
+  width: 120px;
+  height: auto;
 }
 
 .produk-dibeli {
-    font-size: 16px;
-    font-weight: 400;
-    margin: 1.2em 0;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 1.2em 0;
 }
 
 .harga-dibeli {
-    font-size: 18px;
-    font-weight: 700;
-    margin: 0.2em 0;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0.2em 0;
 }
 
 .katalog-section {
-    margin: 1em 0;
+  margin: 1em 0;
 }
 
 .img-kat {
-    width: 150px;
-    max-height: 160px;
+  width: 150px;
+  max-height: 160px;
 }
 
 .text-kat {
-    margin: 1em 0;
-    font-size: 15px;
-    font-weight: 400;
-    color: #373F41;
-    text-transform: capitalize;
+  margin: 1em 0;
+  font-size: 15px;
+  font-weight: 400;
+  color: #373f41;
+  text-transform: capitalize;
 }
 
 .harga-kat {
-    font-size: 16px;
-    font-weight: 800;
-    color: #373F41;
-    margin-bottom: 1.2em;
+  font-size: 16px;
+  font-weight: 800;
+  color: #373f41;
+  margin-bottom: 1.2em;
 }
 
 .beli {
-    display: inline;
-    font-size: 13px;
-    font-weight: 700;
-    text-transform: capitalize;
+  display: inline;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: capitalize;
 }
 
 .add-cart {
-    margin-bottom: 2rem;
-    font-size: 13px;
-    text-transform: capitalize;
-    border-radius: 10px;
+  margin-bottom: 2rem;
+  font-size: 13px;
+  text-transform: capitalize;
+  border-radius: 10px;
 }
 
 .cart-title {
-    font-size: 12px;
-    display: inline;
-    color: #373F41;
-    font-weight: 500;
-    text-transform: capitalize;
+  font-size: 12px;
+  display: inline;
+  color: #373f41;
+  font-weight: 500;
+  text-transform: capitalize;
 }
 
 .cart-item {
-    display: grid;
-    align-items: center;
-    grid-template-columns: auto 1fr auto;
-    grid-column-gap: 1.5rem;
-    margin: 1.5rem 0;
-  }
-  .cart-item img {
-    width: 75px;
-    height: 75px;
-  }
-  .cart-item h4 {
-    font-size: 0.85rem;
-    text-transform: capitalize;
-    color: #373F41;
-    font-weight: 500;
-  }
-  .cart-item h5 {
-    margin: 0.5rem 0;
-    font-size: 1rem;
-    color: #373F41;
-    font-weight: 800;
-  }
-  .total-amount {
-    text-align: center;
-    margin: 0;
-    padding: 0;
-  }
-  .remove-item {
-    color: grey;
-    cursor: pointer;
-  }
-  .bi-caret-up-fill,
-  .bi-caret-down-fill {
-      color: coral;
-      cursor: pointer;
-  }
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto 1fr auto;
+  grid-column-gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+.cart-item img {
+  width: 75px;
+  height: 75px;
+}
+.cart-item h4 {
+  font-size: 0.85rem;
+  text-transform: capitalize;
+  color: #373f41;
+  font-weight: 500;
+}
+.cart-item h5 {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #373f41;
+  font-weight: 800;
+}
+.total-amount {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.remove-item {
+  color: grey;
+  cursor: pointer;
+}
+.bi-caret-up-fill,
+.bi-caret-down-fill {
+  color: coral;
+  cursor: pointer;
+}
 
-  .ongkir {
-      font-size: 13px;
-      color: grey;
-      font-style: italic;
-      font-weight: 400;
-  }
+.ongkir {
+  font-size: 13px;
+  color: grey;
+  font-style: italic;
+  font-weight: 400;
+}
 
-  .title-total {
-      font-weight: 800;
-      text-transform: capitalize;
-      color: #373F41;
-  }
+.title-total {
+  font-weight: 800;
+  text-transform: capitalize;
+  color: #373f41;
+}
 
-  .total-count {
-      font-size: 12px;
-  }
+.total-count {
+  font-size: 12px;
+}
 
-  .embed-responsive {
-      margin: 1.8rem 1rem;
-  }
+.embed-responsive {
+  margin: 1.8rem 1rem;
+}
 
-  .bi-x-circle {
-      color: red;
-  }
+.bi-x-circle {
+  color: red;
+}
 
-  .img-tiyokfood2 {
-      width: 65%;
-      margin-top: 4.5em;
-  }
+.img-tiyokfood2 {
+  width: 65%;
+  margin-top: 4.5em;
+}
 
-  .img-logo-order {
-      margin: 6em 0;
-      width: 100vh;
-  }
+.img-logo-order {
+  margin: 6em 0;
+  width: 100vh;
+}
 
-  .cara-order {
-      margin: 2em 0;
-  }
+.cara-order {
+  margin: 2em 0;
+}
 
-  .img-logo-order {
-      width: 180px;
-  }
+.img-logo-order {
+  width: 180px;
+}
 
-  .total-checkout {
-      text-align: center;
-      color: #373F41;
-      font-weight: 800;
-      font-size: 24px;
-  }
+.total-checkout {
+  text-align: center;
+  color: #373f41;
+  font-weight: 800;
+  font-size: 24px;
+}
 
-  .form-order {
-      margin: 2.2em 0;
-  }
+.form-order {
+  margin: 2.2em 0;
+}
 
-  .btn-pesan {
-      width: 10.6em;
-      border-radius: 4px;
-      text-transform: uppercase;
-  }
+.btn-pesan {
+  width: 10.6em;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
 
-  .clear-cart {
-      font-size: 12px;
-      text-transform: capitalize;
-      background-color: coral;
-      border: none;
-      border-radius: 4px;
-      margin: 1.2em 0;
-  }
+.clear-cart {
+  font-size: 12px;
+  text-transform: capitalize;
+  background-color: coral;
+  border: none;
+  border-radius: 4px;
+  margin: 1.2em 0;
+}
 
-  .title-checkout {
-      font-size: 2em;
-      font-weight: 700;
-      margin: 1.2em;
-  }
+.title-checkout {
+  font-size: 2em;
+  font-weight: 700;
+  margin: 1.2em;
+}
 
-  .total-belanja {
-      font-size: 1.8em;
-  }
+.total-belanja {
+  font-size: 1.8em;
+}
 
-  .img-checkout {
-      width: 80px;
-      margin: 1em;
-  }
+.img-checkout {
+  width: 80px;
+  margin: 1em;
+}
 
 .harga-satuan-checkout {
-    font-weight: 800;
+  font-weight: 800;
 }
 
 .title-item-checkout {
-    font-size: 14px;
-    font-weight: 800;
-    text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: capitalize;
 }
 
-.btn-reseller-component a {
+/* .btn-reseller-component a {
     background-color: #38508F;
     padding: 12px;
     color: white;
@@ -524,4 +523,72 @@
     .navbar-toggler {
         margin: auto !important;
     }
-  }
+  } */
+
+.btn-reseller-component {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #04aa6d;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: none;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.btn-reseller-component:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.btn-reseller-component:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+.daftar-reseller {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.logo-reseller {
+    width: 160px;
+}
+
+.subtitle-reseller {
+    font-size: 24px;
+    color: #373737;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 24px;
+}
+
+.form-reseller-component {
+    padding: 2.75rem;
+}
